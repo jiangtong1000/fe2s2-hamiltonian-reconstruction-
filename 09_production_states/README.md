@@ -52,7 +52,6 @@ These are results of the completed 2026-10-05/06 calculation. Packaging checks d
 
 Retained evidence:
 
-- [results/build/cas20_refine_5000_resources.json](results/build/cas20_refine_5000_resources.json)
 - [results/cas14/convergence.json](results/cas14/convergence.json)
 - [results/cas14/energies.json](results/cas14/energies.json)
 - [results/cas14/occupations.txt](results/cas14/occupations.txt)
@@ -62,9 +61,6 @@ Retained evidence:
 - [results/cas20/occupations.txt](results/cas20/occupations.txt)
 - [results/cas20_rdms.npz](results/cas20_rdms.npz)
 - [results/validation/cas14_convergence_review.json](results/validation/cas14_convergence_review.json)
-- [results/validation/cas20_stage2_review.json](results/validation/cas20_stage2_review.json)
-- [results/validation/cas20_stage3_review.json](results/validation/cas20_stage3_review.json)
-- [results/validation/cas20_stage4_review.json](results/validation/cas20_stage4_review.json)
 - [results/validation/cas20_stage5_review.json](results/validation/cas20_stage5_review.json)
 
 ## Reuse for a similar task

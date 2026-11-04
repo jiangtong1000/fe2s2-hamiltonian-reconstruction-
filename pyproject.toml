@@ -1,5 +1,0 @@
-[tool.black]
-line-length = 88
-target-version = ["py311"]
-# Historical snapshots and recorded results are immutable evidence.
-force-exclude = '/(provenance|work|results|\.git)/'

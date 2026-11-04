@@ -1,8 +1,8 @@
 # Git contents and external calculation data
 
-The compact repository preserves small inputs, scripts, final CAS FCIDUMPs, compressed 1-/2-RDM arrays, the final orbital coefficient/rotation bundle, maps, metadata, convergence histories, validation summaries, and PDF figures. `provenance/retained_files.json` maps exact copied files to original paths and hashes; compressed bundles are described below. `provenance/repository_checksums.json` checks the entire committed payload apart from itself and Git metadata.
+The compact repository preserves small inputs, scripts, final CAS FCIDUMPs, compressed 1-/2-RDM arrays, the final orbital coefficient/rotation bundle, maps, metadata, convergence histories, validation summaries, and PDF figures. Compressed bundles are described below. `provenance/repository_checksums.json` checks the entire committed payload apart from itself and Git metadata.
 
-The original calculation directory is not part of this repository. The original manifest records full artifact hashes and original locations; `provenance/omitted_artifacts.json` lists large omitted artifacts with rebuild steps. These pointers document provenance, not guaranteed future availability.
+The original calculation directory is not part of this repository. The table lists what was left out and how to rebuild it.
 
 | Omitted class | Why omitted from Git | Rebuild / retention |
 |---|---|---|
@@ -11,7 +11,7 @@ The original calculation directory is not part of this repository. The original 
 | Parent checkpoint and most AO/MO arrays | Reproducible but machine/version-sensitive numerical result | Step 02; preserve externally when exact historical coefficients matter |
 | Native MPS states and operator scratch | States can be expensive to obtain; scratch is rebuildable | Keep GS checkpoint/state metadata externally; regenerate MPO scratch. Rerunning steps 04/05/09 is possible but costly |
 | CAS14 FCI vector | Large solver state | Step 10; preserve externally if repeated FCI-state analyses are expected |
-| Refinement backups and verbose scheduler logs | Large/redundant history | Compact convergence reports and submitted-source snapshots retained; original files remain local |
+| Refinement backups and verbose scheduler logs | Large/redundant history | Compact convergence reports retained |
 | Source PDFs | Readily obtainable from recorded sources | Source URLs, identifying table/page, and hashes retained |
 | Historical reference FCIDUMP | Third-party data, not redistributed | Step 01 fetches it from the pinned upstream commit and verifies its SHA-256 |
 

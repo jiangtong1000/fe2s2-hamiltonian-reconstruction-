@@ -6,7 +6,7 @@ Establish the historical singlet reference using the same solver and RDM convent
 
 `run.py` calls `../_shared/run_dmrg.py` with the historical FCIDUMP directory as its working directory. It uses block2 SU2 singlet symmetry, seed 10405, input orbital order, a two-site optimization followed by one-site finishing sweeps, and saves native GS states, convergence history, and spin-summed 1-/2-RDMs.
 
-The corrected shared driver restores the two-site representation at every bond stage. A fresh run is a reproducible construction recipe, not a byte-for-byte replay of earlier debugging and restart history. Historical submitted snapshots are retained in `../provenance/submitted/`.
+The corrected shared driver restores the two-site representation at every bond stage. A fresh run is a reproducible construction recipe, not a byte-for-byte replay of earlier debugging and restart history.
 
 Use `--action refine --bonds 1600 2000` only after examining density convergence; the initial schedule already reaches 2000.
 

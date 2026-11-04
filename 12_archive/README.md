@@ -43,14 +43,7 @@ New calculations write to the work directory, never to the committed `results/` 
 
 ## Recorded result
 
-The original manifest and completion audits are retained under `results/` and `../provenance/`. The original audit covered 553 hashed files totaling 44,999,098,931 bytes, plus its own report entry. `../provenance/omitted_artifacts.json` identifies large omitted files, original checksums, and rebuild steps. The original local calculation archive remains intact.
-
-These are results of the completed 2026-10-05/06 calculation. Packaging checks do not constitute a new molecular rerun.
-
-Retained evidence:
-
-- [results/validation/artifact_audit.json](results/validation/artifact_audit.json)
-- [results/validation/completion_audit.json](results/validation/completion_audit.json)
+None in this repository: this step records the outputs of a new run. The original calculation was archived the same way (553 hashed files, about 45 GB); that archive is not part of this repository.
 
 ## Reuse for a similar task
 

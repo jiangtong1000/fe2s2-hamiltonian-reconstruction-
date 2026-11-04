@@ -51,7 +51,6 @@ These are results of the completed 2026-10-05/06 calculation. Packaging checks d
 
 Retained evidence:
 
-- [results/build/resource_estimates.json](results/build/resource_estimates.json)
 - [results/sources/geometry_provenance.json](results/sources/geometry_provenance.json)
 
 ## Reuse for a similar task

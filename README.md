@@ -19,7 +19,7 @@ This repository preserves the **method and evidence**, including the finding tha
 | [09_production_states](09_production_states/README.md) | Final CAS20 and CAS14 singlets | CAS20 total = −5092.872362559896 Eh |
 | [10_independent_validation](10_independent_validation/README.md) | Integral, embedding, virtual-block, FCI checks | Numerical checks passed; CAS14 FCI agrees within ~8.7e-10 Eh |
 | [11_assessment](11_assessment/README.md) | Historical occupations and compression cost | ΔEfreeze = 34.1692 mEh; K6-double weight = 0.940363 |
-| [12_archive](12_archive/README.md) | Artifact inventory and reproducibility | Checksums, provenance, external-data/rebuild policy |
+| [12_archive](12_archive/README.md) | Hash manifest for a new run | Records output hashes, package versions and maps; deletes nothing |
 
 Steps 04 and 07 can run independently once their inputs exist. The numbered order is a convenient serial route. Step 06 requires a sufficiently converged provisional density; step 11 requires final state and validation results. Review diagnostics between steps rather than blindly chaining jobs.
 
@@ -48,9 +48,9 @@ DMRG schedules are starting points. The completed production CAS20 needed refine
 
 ## What is preserved
 
-Small inputs and results are committed. Compressed NPZ files preserve the saved RDM arrays and final coefficient/rotation matrices. The production and historical FCIDUMPs, chemical reviews, index maps, convergence histories, figures, and independent validation metrics remain directly inspectable. [STORAGE.md](STORAGE.md) explains omitted arrays, reconstruction routes, and which expensive states deserve external retention.
+Small inputs and results are committed. Compressed NPZ files preserve the saved RDM arrays and final coefficient/rotation matrices. The production and provisional FCIDUMPs, chemical reviews, index maps, convergence histories, figures, and independent validation metrics remain directly inspectable. [STORAGE.md](STORAGE.md) explains omitted arrays, reconstruction routes, and which expensive states deserve external retention.
 
-`results/` always means **recorded original evidence**, not output from the portable wrappers. Copied JSON/YAML may contain original relative paths and Slurm job IDs. Those identify the completed calculation; new runs record their own paths, command hashes, logs, versions, and states. [provenance/README.md](provenance/README.md) explains source copies and the limited portability edits. Original calculation files were left intact.
+`results/` always means **recorded original evidence**, not output from the portable wrappers. Copied JSON/YAML may contain original relative paths and Slurm job IDs. Those identify the completed calculation; new runs record their own paths, command hashes, logs, versions, and states. [provenance/README.md](provenance/README.md) describes the method record and the file inventory.
 
 Two natural-orbital constructions remain explicitly separate:
 
@@ -63,7 +63,7 @@ cas20_natural_orbitals:
 
 The CAS20 rotation uses the provisional direct-AO density. Final production RDMs validate that fixed basis and assess compression. Only genuine F44 core orbitals are contracted out of the full Hamiltonian; trial-fixed I/K6 and trial-empty V do not restrict future propagation. AFQMC adapters, propagation, and truncated MSD export were outside this phase.
 
-For code changes and routine checks, see [MAINTENANCE.md](MAINTENANCE.md).
+After editing files, review the diff, then refresh and check the inventory and run the tests (`python tools/check_repository.py --update-inventory`, `python tools/check_repository.py`, `python -m unittest discover -s tests -v`). Treat `*/results/` as recorded evidence: a changed algorithm needs a new run and separately recorded results.
 
 ## Limits and adapting the example
 

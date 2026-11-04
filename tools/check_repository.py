@@ -37,8 +37,9 @@ def verify_structure():
     for i, step in enumerate(steps, 1):
         assert step.name.startswith(f"{i:02d}_")
         assert (step / "README.md").is_file() and (step / "run.py").is_file()
-        assert any((step / "results").rglob("*"))
         spec = json.loads((step / "step.json").read_text())
+        if spec.get("recorded_results", True):
+            assert any((step / "results").rglob("*")), step.name
         assert spec["step"] == step.name and "default" in spec["actions"]
         for action in spec["actions"].values():
             for command in action["commands"]:
@@ -58,9 +59,6 @@ def verify_structure():
                 assert (
                     p.parent / target
                 ).exists(), f"Broken local link in {p}: {target}"
-    for item in json.loads((ROOT / "provenance/retained_files.json").read_text()):
-        p = ROOT / item["repository_path"]
-        assert hashlib.sha256(p.read_bytes()).hexdigest() == item["sha256"], str(p)
     inputs = ROOT / "01_inputs/inputs"
     for name, digest in json.loads((inputs / "checksums.json").read_text()).items():
         assert hashlib.sha256((inputs / name).read_bytes()).hexdigest() == digest, name
@@ -85,7 +83,7 @@ def main():
             expected == current
         ), "Payload differs from inventory; inspect changes before updating checksums"
     print(
-        f'PASS: {count} steps; {len(current)} checked files; {sum(x["size_bytes"] for x in current.values())/1024**2:.2f} MiB payload; syntax, links, copied/input hashes, and action graph valid.'
+        f'PASS: {count} steps; {len(current)} checked files; {sum(x["size_bytes"] for x in current.values())/1024**2:.2f} MiB payload; syntax, links, input hashes, and action graph valid.'
     )
 
 

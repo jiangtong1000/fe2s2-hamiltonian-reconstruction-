@@ -1,6 +1,7 @@
 {
   "step": "12_archive",
   "title": "Reproducibility manifest and storage policy",
+  "recorded_results": false,
   "requires": [
     "validation/validation_metrics.json",
     "validation/compression_assessment.json"
