@@ -1,0 +1,51 @@
+{
+  "step": "04_reference_dmrg",
+  "title": "Historical Hamiltonian: singlet DMRG and RDMs",
+  "requires": [
+    "reference_zhendong/FCIDUMP"
+  ],
+  "outputs": [
+    "reference_zhendong/energies.json"
+  ],
+  "resources": {
+    "cpus": 16,
+    "memory_GiB": 96,
+    "walltime": "12:00:00"
+  },
+  "actions": {
+    "default": {
+      "commands": [
+        {
+          "script": "_shared/run_dmrg.py",
+          "cwd": "reference_zhendong",
+          "args": [],
+          "refine": false
+        }
+      ],
+      "protect": [
+        "reference_zhendong/native_state"
+      ]
+    },
+    "refine": {
+      "commands": [
+        {
+          "script": "_shared/run_dmrg.py",
+          "cwd": "reference_zhendong",
+          "args": [],
+          "refine": true
+        }
+      ],
+      "requires": [
+        "reference_zhendong/energies.json",
+        "reference_zhendong/native_state"
+      ],
+      "bonds": [
+        1600,
+        2000
+      ]
+    }
+  },
+  "env": {
+    "DMRG_STACK_GB": "32"
+  }
+}

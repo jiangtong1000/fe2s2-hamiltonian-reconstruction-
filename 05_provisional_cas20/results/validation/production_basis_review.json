@@ -1,0 +1,19 @@
+{
+  "status": "density_accepted_for_production_basis_construction",
+  "source_job": 50710669,
+  "maximum_sorted_occupation_change": 0.0002224208547063622,
+  "maximum_K6_occupation_change": 2.1270099918924146e-05,
+  "K6_subspace_max_sine_angle": 0.00018864001376094985,
+  "sixth_occupation": 1.9715589230020842,
+  "sixth_seventh_gap": 0.024999778585759858,
+  "screening_margin_above_1p97": 0.001558923002084267,
+  "last_bond_energy_change_Eh": -2.331793075427413e-05,
+  "provisional_energy_meets_1e_5_Eh_convergence_indicator": false,
+  "reason": "K6 occupation changes are over 70 times smaller than its screening margin; its subspace and separation are stable. This authorizes basis construction, not a claim of converged provisional energy or acceptable CAS14 compression loss.",
+  "remaining_requirements": [
+    "Final production CAS20 and CAS14 energy convergence to 1e-5 Eh target",
+    "Production density/partition stability",
+    "Compression energy cost and sector weight",
+    "Full Hamiltonian and embedding validation"
+  ]
+}

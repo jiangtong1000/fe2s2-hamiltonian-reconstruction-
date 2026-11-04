@@ -1,0 +1,96 @@
+Fe2S2 molecular construction: implemented method and provenance
+
+Molecule and coordinates
+  Oxidized [Fe2S2(SCH3)4]2-, charge -2, 186 all-electron electrons.
+  geometry.xyz contains the Sharma et al. 2014 SI Table 1 oxidized geometry,
+  in Angstrom, as published to 0.01 Angstrom. It is experimentally derived
+  with methyl substitution, not the relaxed reduced-cluster geometry.
+  sources/geometry_provenance.json records the source, hash and atom map.
+  Exact identity with the geometry behind the historical FCIDUMP is unverified.
+
+Parent calculation
+  PySCF 2.9.0, Python 3.11.13; high-spin unrestricted BP86.
+  S=5, multiplicity 11, PySCF spin=10, Nalpha=98, Nbeta=88.
+  TZP-DKH all-electron basis, spherical functions, 662 contracted spatial AOs.
+  Explicit exponents/contractions and AO labels: parent/ao_metadata.json.
+  Molecular checkpoint: parent/scf.chk. No ECP and no AO functions removed.
+  Minimum overlap eigenvalue: 0.0007298614636798928.
+  Molecular symmetry disabled; PySCF minao initial guess; ordinary UKS SCF.
+  DFT grid level 4; energy convergence tolerance 1e-10 Eh,
+  orbital-gradient tolerance 1e-6. Actual submitted implementation is
+  build/submitted/run_parent_50704020.py; parent output records SCF iterations.
+  The metadata key df_total_energy denotes the DFT total energy; it does not
+  denote a density-fitting approximation. The parent uses direct Coulomb ERIs.
+
+Relativity and physical Hamiltonian
+  PySCF SpinFreeX2CHelper, approximation='1e', xuncontract=True.
+  The one-electron X2C operation internally uncontracts the basis and returns
+  hcore in the original 662-AO contracted representation. Saved hcore and
+  overlap: parent/hcore_ao.npy and parent/overlap_ao.npy.
+  Ordinary Coulomb two-electron integrals; no two-electron picture-change
+  corrections. Spin-free scalar relativity is not spin-orbit coupling.
+  The exported Hamiltonian excludes the DFT XC potential and any AFQMC
+  sum-of-squares one-body adjustment.
+
+Parent natural orbitals and split localization
+  Parent natural orbitals diagonalize S^(1/2) (Dalpha+Dbeta) S^(1/2).
+  Their AO coefficients are S^(-1/2) times the eigenvectors; occupations are
+  descending and the largest-magnitude AO coefficient fixes each real phase.
+  Artifacts: parent/mo_coeff.npy, parent/parent_natural_occupations.npy,
+  both AO spin densities, and the alpha/beta UKS-to-UNO transformations.
+  Occupation boundaries 1.5 and 0.5 produce 88 double-like, 10 single-like
+  and 564 virtual orbitals. These thresholds are implementation choices,
+  not recovered historical settings.
+  Within the double-like space a core-character projector selects 44 F
+  orbitals; the remaining 44 valence orbitals form a separate PM block.
+  PM localization is separate for core, occupied valence and single blocks:
+  Mulliken populations, exponent 2, atomic initialization, max_cycle=150,
+  conv_tol=1e-10, conv_tol_grad=1e-6, no imposed molecular symmetry.
+  orbitals/selection_report.json records achieved objectives and gradients.
+  Orbital-character diagnostics use meta-Lowdin AOs with ANO preorthogonalization.
+
+Core and chemical CAS selection
+  Genuine F: Fe/S [Ne] plus C 1s, 44 spatial orbitals; Fe 3s/3p retained.
+  Character and semicore checks: orbitals/chemical_review.json.
+  CAS(30e,20o): ten Fe 3d-derived, six bridging-S 3p-derived, and four
+  terminal-S 3p-derived orbitals directed toward their bonded Fe atoms.
+  Selection uses orbital character, including ligand mixing, not energies.
+  Initial chemical order follows terminal(2), Fe1(5), bridge(6), Fe2(5),
+  terminal(2). Exact historical localized-orbital gauge is not claimed.
+
+Correlated natural orbitals and retained partition
+  The separate CAS20 natural orbitals come from the singlet CAS(30e,20o)
+  DMRG 1-RDM, not the high-spin UKS density. The provisional direct-AO
+  density supplies the production rotation; the production density checks it.
+  Full rotations, phases and index maps are in orbitals/transformations.npz,
+  orbitals/U_natural_20.npy and orbitals/index_maps.json.
+  No CASSCF or DMRG-SCF orbital optimization is performed.
+  Final retained order [I34 | K6 | A14 | V564]: 618 orbitals, 98 electrons,
+  singlet Nalpha=Nbeta=49. Only F is removed from the full Hamiltonian.
+  I and K6 have fixed occupations only in the corresponding trial embeddings.
+  V is empty only in those trials; full cross-block integrals are retained.
+  CAS14 reduction remains subject to the measured compression assessment.
+
+Integral representation and solvers
+  Real float64 spatial orbitals, energies in hartree, chemists' ERIs.
+  Direct AO modified Cholesky threshold 1e-9 gives 9218 factors; the 1e-8
+  prefix has 7545 factors. This is not auxiliary-basis density fitting.
+  Full factors: (gamma,p,q), ERI(pq|rs)=sum_gamma L(gamma,p,q)L(gamma,r,s).
+  Physical h1 and scalar include genuine F contributions exactly once.
+  Both production CAS Hamiltonians are contractions of that same stored
+  full representation; sequential contraction is checked independently.
+  DMRG uses block2-mpi 0.5.3 SU2 singlets, with state-specific schedules,
+  energies, RDM conventions and provenance saved in each CAS directory.
+  CAS14 additionally has an independent PySCF direct_spin0 FCI state/RDM.
+  New solver accuracy target is 1e-5 Eh; occupations need separate checks.
+  Final acceptance is recorded in validation artifacts and manifest.yaml;
+  this method description does not certify unfinished numerical checks.
+
+Historical comparison and phase boundary
+  The pinned reference FCIDUMP has zero scalar. Its external core energy
+  -4976.26532397 Eh is added only for historical total-energy comparisons.
+  That scalar is never transplanted into this molecular Hamiltonian.
+  Chemical and sorted-natural-occupation agreement do not establish identical
+  Hamiltonians; historical AO/MO coefficients are unavailable for direct overlap.
+  Native states, RDMs, index/phase maps and full integrals are preserved for
+  later VCE/active-space AFQMC. Backend adaptation and propagation are deferred.

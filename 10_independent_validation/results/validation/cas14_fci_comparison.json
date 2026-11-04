@@ -1,0 +1,67 @@
+{
+  "status": "passed",
+  "checks": {
+    "fci_rdm_energy": {
+      "error_Eh": -9.094947017729282e-13,
+      "passed": true
+    },
+    "fci_full_embedding": {
+      "error_Eh": 0.0,
+      "passed": true
+    },
+    "fci_direct_AO_energy": {
+      "error_Eh": -1.3743374438490719e-08,
+      "passed": true
+    },
+    "dmrg_vs_fci": {
+      "dmrg_minus_fci_Eh": 8.703864295966923e-10,
+      "passed": true
+    },
+    "rdm_traces": {
+      "one_body": 18.000000000000142,
+      "two_body": 306.0000000000025,
+      "passed": true
+    }
+  },
+  "fcidump_sha256": "5452fc1073e77bc47ed70dc56074f038971046ffd534c02a0000d6be0f865497",
+  "fci_energy_total": -5092.8381933518895,
+  "dmrg_energy_total": -5092.838193351019,
+  "fci_residual_norm": 9.808054423854063e-06,
+  "sorted_occupations_fci": [
+    1.9576572523630158,
+    1.9551924777390393,
+    1.9543231416361384,
+    1.9540789738560649,
+    1.441949524015526,
+    1.4366446634904144,
+    1.2149705102912034,
+    1.1372666207189575,
+    1.0589984526698184,
+    0.9448479913710376,
+    0.9055893494386618,
+    0.8284778914549076,
+    0.6066781787475863,
+    0.6033249722077709
+  ],
+  "sorted_occupations_dmrg": [
+    1.957658325944084,
+    1.955193528855965,
+    1.9543233541012108,
+    1.9540792280304269,
+    1.4419510391818533,
+    1.4366457319094321,
+    1.2149673081274786,
+    1.1372629945413955,
+    1.0589727241399605,
+    0.9448715118749903,
+    0.9055928462215367,
+    0.8284799900829991,
+    0.6066777937885873,
+    0.6033236232000997
+  ],
+  "maximum_occupation_difference": 2.5728529857937943e-05,
+  "fci_generating_job": "50726722",
+  "dmrg_generating_job": "50707994",
+  "validation_generating_job": "50691800",
+  "interpretation": "Independent iterative FCI ground-state check; residual and solver convergence remain part of the evidence."
+}

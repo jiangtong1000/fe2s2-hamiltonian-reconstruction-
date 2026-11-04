@@ -1,0 +1,52 @@
+{
+  "source_url": "https://authors.library.caltech.edu/records/xzxp2-7q641/files/nchem.2041-s1.pdf?download=1",
+  "source_pdf_sha256": "9e20b18edd29a081ec3433f5a00c9307ee25c0f973922c438278ef46af6f5804",
+  "table": 1,
+  "pdf_page_one_based": 3,
+  "units": "angstrom",
+  "coordinate_precision_angstrom": 0.01,
+  "description": "Oxidized geometry derived from experimental structure with methyl substitution; not the relaxed reduced-dimer geometry.",
+  "atom_indices_zero_based": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "fe_indices_zero_based": [
+    0,
+    5
+  ],
+  "bridge_s_indices_zero_based": [
+    1,
+    4
+  ],
+  "terminal_s_indices_zero_based": [
+    2,
+    3,
+    6,
+    7
+  ],
+  "fe_fe_distance_angstrom": 2.6864846919347967,
+  "geometry_sha256": "fa0a95aed5278567da19b4779c94c6d3ba06e054bc58f5bb76e3ebab3aac05f8",
+  "decision": "Primary-source oxidized Table 1; identity with the geometry behind the historical FCIDUMP is not verified."
+}

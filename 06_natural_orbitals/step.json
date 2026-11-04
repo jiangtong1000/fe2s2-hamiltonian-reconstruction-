@@ -1,0 +1,36 @@
+{
+  "step": "06_natural_orbitals",
+  "title": "Correlated natural orbitals and nested partition",
+  "requires": [
+    "cas20_provisional/rdm1.npy"
+  ],
+  "outputs": [
+    "orbitals/index_maps.json"
+  ],
+  "resources": {
+    "cpus": 4,
+    "memory_GiB": 8,
+    "walltime": "01:00:00"
+  },
+  "actions": {
+    "default": {
+      "commands": [
+        {
+          "script": "06_natural_orbitals/finalize_orbitals.py",
+          "cwd": ".",
+          "args": [],
+          "refine": false
+        },
+        {
+          "script": "06_natural_orbitals/describe_final_basis.py",
+          "cwd": ".",
+          "args": [],
+          "refine": false
+        }
+      ],
+      "protect": [
+        "orbitals/U_natural_20.npy"
+      ]
+    }
+  }
+}

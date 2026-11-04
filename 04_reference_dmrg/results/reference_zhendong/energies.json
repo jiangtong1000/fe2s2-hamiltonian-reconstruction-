@@ -1,0 +1,59 @@
+{
+  "norb": 20,
+  "nelec": 30,
+  "spin": 0,
+  "symmetry": "SU2 singlet",
+  "energy_total": -116.60560859480294,
+  "ecore": 0.0,
+  "energy_active": -116.60560859480294,
+  "energy_rdm": -116.60560859479499,
+  "norm": 1.0,
+  "fcidump_sha256": "95d8786af06eeea2107e19ffd98c66a6ca97fc8c9864175a4f6d64512b6f2df9",
+  "spin_square": 1.9167254029851525e-15,
+  "random_seed": null,
+  "optimization_provenance": {
+    "random_seed": null,
+    "note": "Original optimization seed was not recorded; RDM recovery seed does not establish it."
+  },
+  "rdm_only_recovery": false,
+  "native_state_reload_validation": {
+    "norm": 1.0,
+    "energy": -116.60560859479513,
+    "energy_error": 7.815970093361102e-12
+  },
+  "block2_version": "0.5.3",
+  "solver_site_to_local_zero_based": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+  ],
+  "rdm1_convention": "spin-summed <a_p^dagger a_q>",
+  "rdm2_convention": "dm2[p,r,s,q] = sum_sigma,tau <a_p,sigma^dagger a_r,tau^dagger a_s,tau a_q,sigma>",
+  "native_state": {
+    "directory": "native_state",
+    "tag": "GS",
+    "spin_adapted": true
+  },
+  "generating_slurm_job_id": "50710665",
+  "run_script_sha256": "2deeb88c7680753c57bb3153313bcb4bea671c36a7a7edf2814974416d561f48",
+  "run_script_artifact": "build/submitted/run_dmrg_50710665.py",
+  "refinement_random_seed": 10405,
+  "provenance_annotation": "Job and refinement seed recorded after completion from the submitted driver snapshot and Slurm. Original initialization seed remains unrecorded."
+}

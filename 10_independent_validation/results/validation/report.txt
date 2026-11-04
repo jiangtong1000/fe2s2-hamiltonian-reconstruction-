@@ -1,0 +1,83 @@
+Fe2S2 reconstruction validation report
+Numerical status: ALL REQUIRED CHECKS PASSED (job 50789929, exit 0).
+Archive integrity and semantic-map checks passed; see artifact_audit.json
+and the requirement-by-requirement completion_audit.json.
+
+Scope and provenance
+  Full molecular Hamiltonian, CAS20 singlet and nested CAS14 candidate are
+  constructed. Fixed-Hamiltonian tests originated in job 50707994; validator
+  50789929 freshly SHA256-verified the fixed inputs before reusing those tests
+  and independently re-evaluated final state expectations. Intermediate failed
+  convergence reports remain archived, not substituted for final validation.
+  Exact historical Hamiltonian/AO-subspace identity is not claimed.
+
+Basis, core and semantic partition
+  Parent: 662 spherical AOs, 186 electrons, UKS BP86/TZP-DKH/sf-X2C, spin=10.
+  Chemical CAS20: ten Fe3d, six bridge-S3p, four terminal Fe-directed S3p MOs.
+  Freeze Fe/S Ne and C1s: F44; Fe3s/3p retained, verified by parent projectors.
+  Retained: 618 orbitals, 98 electrons, singlet 49 alpha/49 beta.
+  Final order I34/K6/A14/V564; only F is contracted from the full Hamiltonian.
+  Complete orthonormality error 7.4908e-13; transformation error 2.0126e-12.
+  Exhaustive partition, nesting and exact electron identities pass.
+  Parent UKS and correlated CAS natural orbitals have separate provenance.
+  The provisional CAS density defines the fixed basis; final production
+  density validates it and is not relabeled as the basis-generating density.
+
+Internal and independent physical-integral validation
+  Internal CAS20 h1/ERI/scalar errors: 5.2882e-14/4.4409e-16/0 Eh.
+  Internal CAS14 h1/ERI/scalar errors: 5.3838e-14/4.4409e-16/0 Eh.
+  Sequential/union freezing h1/scalar/ERI: 1.6875e-14/3.6380e-12/1.6653e-16 Eh.
+  All satisfy the 1e-10 internal tolerance.
+  Independent direct-AO CAS20 h1/ERI/scalar discrepancies:
+    4.9736e-10/6.2037e-11/-4.6357e-9 Eh.
+  Corresponding CAS14 discrepancies: 5.7347e-10/6.2038e-11/-6.4474e-9 Eh.
+  Full physical h1/scalar discrepancies: 6.3905e-9/2.0254e-9 Eh.
+  Nontrivial serialized I/K6/A14-to-V h1 and all specified ERI families pass
+  direct-AO checks. Stratified indices, representative entries, random seed
+  and maximum/RMS statistics are in validation_metrics.json. Sample maxima
+  are not global error bounds. CAS reconstruction does not test these blocks.
+  Independent AO/MO energies of the F-compatible parent and three V-mixed
+  determinants pass. The compatible parent differs from the actual UKS
+  determinant; physical determinant energies are not DFT total energies.
+
+Final correlated states
+  CAS20 Etotal = -5092.872362559896 Eh; Eact = -116.476141945501 Eh;
+    scalar = -4976.396220614395 Eh; producer 50789904.
+  Last bond change = -5.3136673e-6 Eh, within the 1e-5 target.
+  RDM energy agreement is zero at reported precision; native reload error
+  9.0949e-13 Eh; norm 0.9999999999999987; S^2=1.50471e-15.
+  Full embedding discrepancy -9.0949e-12 Eh; direct-AO discrepancy
+  -1.37734e-8 Eh; loose/tight fixed-state sensitivity 1.27278e-7 Eh.
+  CAS14 DMRG Etotal=-5092.838193351019 Eh; independent FCI
+  Etotal=-5092.838193351890 Eh; difference 8.7039e-10 Eh.
+  FCI residual norm=9.8081e-6 Eh. FCI embedding discrepancy is zero at
+  reported precision; direct-AO discrepancy=-1.3743e-8 Eh.
+  Final-state normalization, singlet, density traces, Hamiltonian hashes,
+  stage-density agreement and native-state reload checks pass.
+  Successive-stage changes and fixed-state factorization sensitivity are
+  empirical evidence, not rigorous absolute solver-error bounds.
+
+Historical occupations and compression
+  Matched singlet historical/production sorted-occupation maximum difference
+  = 0.0019006599; RMS = 0.0009048765.
+  Historical and production last-bond occupation changes are 1.55e-5 and
+  5.20e-5. Differences below these empirical resolutions are not separately
+  resolved. Neither spectra nor energies prove identical Hamiltonians.
+  Historical scalar is zero in FCIDUMP; external core -4976.26532397 Eh is
+  added once. Reconstructed minus historical total = -1.4299951 mEh.
+  Final sixth occupation=1.9715520206; sixth/seventh gap=0.0250193072.
+  K6 last-bond maximum occupation change=7.6686e-6; subspace maximum sine
+  angle=6.2455e-5 (versus fixed production K6: 1.9640e-4).
+  Exact K6-double sector weight=0.940362673067; density lower
+  bound=0.929754103949; freezing cost=34.1692089 mEh.
+  CAS14 is a quantified aggressive compression candidate, not an energy-
+  preserving replacement at the present solver scale. The sector weight is
+  not fidelity with the reoptimized CAS14 ground state. No application-
+  specific cost cutoff or AFQMC-bias conclusion has been imposed.
+
+Future-use data
+  Preserve full cross-block factors, explicit F/I/K6/A14/V maps, both trial
+  embeddings, state payloads/RDMs, phase/site conventions and build provenance.
+  I/K6 fixed and V empty are trial properties only, not propagation limits.
+  No truncated MSD was exported. AFQMC adapters/propagation remain deferred.
+  See scientific_assessment.json, completion_audit.json and manifest.yaml.

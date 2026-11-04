@@ -1,0 +1,57 @@
+{
+  "step": "05_provisional_cas20",
+  "title": "Direct-AO CAS20 and basis-defining density",
+  "requires": [
+    "orbitals/chemical_review.json"
+  ],
+  "outputs": [
+    "cas20_provisional/energies.json"
+  ],
+  "resources": {
+    "cpus": 16,
+    "memory_GiB": 96,
+    "walltime": "12:00:00"
+  },
+  "actions": {
+    "default": {
+      "commands": [
+        {
+          "script": "05_provisional_cas20/prepare_provisional.py",
+          "cwd": ".",
+          "args": [],
+          "refine": false
+        },
+        {
+          "script": "_shared/run_dmrg.py",
+          "cwd": "cas20_provisional",
+          "args": [],
+          "refine": false
+        }
+      ],
+      "protect": [
+        "cas20_provisional/FCIDUMP"
+      ]
+    },
+    "refine": {
+      "commands": [
+        {
+          "script": "_shared/run_dmrg.py",
+          "cwd": "cas20_provisional",
+          "args": [],
+          "refine": true
+        }
+      ],
+      "requires": [
+        "cas20_provisional/energies.json",
+        "cas20_provisional/native_state"
+      ],
+      "bonds": [
+        1600,
+        2000
+      ]
+    }
+  },
+  "env": {
+    "DMRG_STACK_GB": "32"
+  }
+}

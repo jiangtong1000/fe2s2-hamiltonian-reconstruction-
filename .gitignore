@@ -1,0 +1,10 @@
+/work/
+__pycache__/
+*.pyc
+.pytest_cache/
+*.out
+*.err
+*.chk
+/native_state/
+/sector_scratch/
+.DS_Store

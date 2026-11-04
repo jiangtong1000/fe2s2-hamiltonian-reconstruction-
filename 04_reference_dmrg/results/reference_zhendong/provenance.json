@@ -1,0 +1,11 @@
+{
+  "source_fcidump": "zhendongli2008/Active-space-model-for-Iron-Sulfur-Clusters: Fe2S2_and_Fe4S4/Fe2S2/fe2s2",
+  "fcidump_sha256": "95d8786af06eeea2107e19ffd98c66a6ca97fc8c9864175a4f6d64512b6f2df9",
+  "local_repo_revision": "1c115694237de0a3b385c270a5473e56544cee49",
+  "scalar_in_fcidump": 0.0,
+  "published_active_energy": -116.6056091,
+  "external_core_energy": -4976.26532397,
+  "published_total_energy": -5092.87093307,
+  "energy_source_url": "https://github.com/zhendongli2008/Active-space-model-for-Iron-Sulfur-Clusters/blob/84433831a680f70665cf43fc8692e0210da92be3/README.md",
+  "local_repo_revision_note": "upstream commit of the copy used; the file is identical at the pinned README commit"
+}

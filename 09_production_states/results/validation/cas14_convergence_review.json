@@ -1,0 +1,19 @@
+{
+  "status": "accepted_with_independent_FCI_and_embedding_checks",
+  "energy_total": -5092.838193351019,
+  "dmrg_minus_fci_Eh": 8.703864295966923e-10,
+  "last_bond_stage_energy_change": -2.469586434017401e-06,
+  "energy_rdm_error": 9.094947017729282e-13,
+  "norm": 1.0000000000000007,
+  "spin_square": 1.401823135867496e-15,
+  "native_state_reload": {
+    "norm": 1.0000000000000007,
+    "energy": -5092.838193351018,
+    "energy_error": 9.094947017729282e-13
+  },
+  "target_Eh": 1e-05,
+  "dmrg_job": "50707994",
+  "fci_job": "50726722",
+  "fcidump_sha256": "5452fc1073e77bc47ed70dc56074f038971046ffd534c02a0000d6be0f865497",
+  "independent_comparison_artifact": "validation/cas14_fci_comparison.json"
+}

@@ -1,0 +1,9 @@
+# Python 3.11; known chemistry versions from the completed calculation.
+# Install on a compute-compatible environment; MPI/build details are cluster specific.
+pyscf==2.9.0
+block2-mpi==0.5.3
+numpy
+scipy
+h5py
+matplotlib
+PyYAML

@@ -1,0 +1,50 @@
+{
+  "norb": 14,
+  "nelec": 18,
+  "spin": 0,
+  "symmetry": "SU2 singlet",
+  "energy_total": -5092.838193351019,
+  "ecore": -5041.128186466395,
+  "energy_active": -51.71000688462391,
+  "energy_rdm": -5092.838193351018,
+  "norm": 1.0000000000000007,
+  "fcidump_sha256": "5452fc1073e77bc47ed70dc56074f038971046ffd534c02a0000d6be0f865497",
+  "spin_square": 1.401823135867496e-15,
+  "random_seed": 10405,
+  "optimization_provenance": {
+    "random_seed": 10405
+  },
+  "rdm_only_recovery": false,
+  "generating_slurm_job_id": "50707994",
+  "run_script_sha256": "9f8693626c3b3ba943987e5eb39ea3c2368c0079eb1b3d79792deec25b3a0e43",
+  "refinement_random_seed": null,
+  "native_state_reload_validation": {
+    "norm": 1.0000000000000007,
+    "energy": -5092.838193351018,
+    "energy_error": 9.094947017729282e-13
+  },
+  "block2_version": "0.5.3",
+  "solver_site_to_local_zero_based": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+  ],
+  "rdm1_convention": "spin-summed <a_p^dagger a_q>",
+  "rdm2_convention": "dm2[p,r,s,q] = sum_sigma,tau <a_p,sigma^dagger a_r,tau^dagger a_s,tau a_q,sigma>",
+  "native_state": {
+    "directory": "native_state",
+    "tag": "GS",
+    "spin_adapted": true
+  }
+}

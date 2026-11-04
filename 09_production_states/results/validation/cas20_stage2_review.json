@@ -1,0 +1,28 @@
+{
+  "status": "additional_refinement_required",
+  "reviewed_stage": 2,
+  "bond_dimension": 2000,
+  "energy_total": -5092.872056397495,
+  "energy_change_from_previous_stage": -0.00039744386231177486,
+  "excess_above_saved_trial_Eh": 0.00028930922508152435,
+  "target_Eh": 1e-05,
+  "next_bond_dimensions": [
+    3000,
+    4000
+  ],
+  "job_id": 50740209,
+  "dependency_afterok": 50707994,
+  "basis_and_orbital_selection_unchanged": true,
+  "validation_note": "Current job must finish before refinement mutates CAS20. Initial molecular integral checks remain relevant, but state-specific checks require refreshed results after refinement.",
+  "state_checks": {
+    "energy_rdm_error": 0.0,
+    "norm": 1.0000000000000004,
+    "spin_square": 1.6616443211045419e-15,
+    "native_state_reload": {
+      "norm": 1.0000000000000004,
+      "energy": -5092.872056397497,
+      "energy_error": -1.8189894035458565e-12
+    }
+  },
+  "last_stage_max_occupation_change": 0.002650766222324741
+}

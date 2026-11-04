@@ -1,0 +1,9 @@
+{
+  "stage": "provisional_direct_AO",
+  "norb": 20,
+  "nelec": 30,
+  "ecore": -4976.39622061903,
+  "selection_source": "orbitals/selection_report.json",
+  "fcidump_sha256": "89dd39ea88f90782d46f5e1254d64562cd55b8bca8dbd77edbd29cadf6c2908a",
+  "basis_artifact": "orbitals/mo_coeff_20_initial.npy"
+}

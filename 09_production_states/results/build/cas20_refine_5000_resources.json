@@ -1,0 +1,17 @@
+{
+  "status": "submitted",
+  "reason": "Completed bond-4000 stage changed energy by 35.79022632 microhartree from bond 3000, exceeding the 10 microhartree convergence target.",
+  "source_job": "50740209",
+  "observed_bond_4000_peak_RSS_KiB": 73250144,
+  "observed_bond_4000_peak_GiB": 69.85678100585938,
+  "quadratic_bond_scaling_estimate_GiB": 109.15122032165527,
+  "estimate_caveat": "Heuristic memory estimate, not a bound; stack, environment tensors and RDM contractions can scale differently.",
+  "requested_memory_GiB": 160,
+  "block2_stack_GB": 80,
+  "cpus": 16,
+  "walltime_hours": 12,
+  "script": "cas20/submit_refine_5000.sh",
+  "submission_condition": "Satisfied: solver 50740209 COMPLETED; validator 50742582 finished with only expected bond-convergence failure, archived before submission.",
+  "generating_slurm_job_id": "50789904",
+  "validation_slurm_job_id": "50789929"
+}

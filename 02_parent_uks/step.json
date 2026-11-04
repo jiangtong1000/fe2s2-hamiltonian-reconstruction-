@@ -1,0 +1,47 @@
+{
+  "step": "02_parent_uks",
+  "title": "High-spin BP86 and parent natural orbitals",
+  "requires": [
+    "geometry.xyz",
+    "inputs/basis.json"
+  ],
+  "outputs": [
+    "parent/scf.chk",
+    "parent/ao_metadata.json"
+  ],
+  "resources": {
+    "cpus": 8,
+    "memory_GiB": 64,
+    "walltime": "02:00:00"
+  },
+  "actions": {
+    "default": {
+      "commands": [
+        {
+          "script": "02_parent_uks/run_parent.py",
+          "cwd": ".",
+          "args": [],
+          "refine": false
+        }
+      ],
+      "protect": [
+        "parent/scf.chk"
+      ]
+    },
+    "newton": {
+      "commands": [
+        {
+          "script": "02_parent_uks/run_parent.py",
+          "cwd": ".",
+          "args": [
+            "--newton"
+          ],
+          "refine": false
+        }
+      ],
+      "protect": [
+        "parent/scf.chk"
+      ]
+    }
+  }
+}

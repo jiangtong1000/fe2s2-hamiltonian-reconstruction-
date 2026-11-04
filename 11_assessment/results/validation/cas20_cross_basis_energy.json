@@ -1,0 +1,18 @@
+{
+  "provisional_state_production_energy": -5092.87234570672,
+  "provisional_state_direct_energy": -5092.872345720499,
+  "production_minus_direct_same_state": 1.3778844731859863e-08,
+  "integral_vs_density_rotation_error": 9.094947017729282e-13,
+  "production_fcidump_sha256": "c081c9e41d9cb8c33a15c2e40636429c079eb21fd29e84e04a48b6886a716bad",
+  "source_rdm_sha256": {
+    "rdm1.npy": "02b8256d53f16d2f757eecfe3ba7a0be14951731fbc61840d1494814ba79bf9f",
+    "rdm2.npy": "e3ebfe5cd86937c20512505158c6ed5a06899dd13ed5d3264774f5485ad57187"
+  },
+  "source_state_job": "50710669",
+  "interpretation": "Variational trial energy in the same production Hamiltonian. A higher production DMRG energy implies at least that energy error; this trial is not an exact ground-state bound from below.",
+  "passed": true,
+  "production_energy_excess_above_saved_trial": -1.6853176020958927e-05,
+  "production_energy_error_lower_bound": 0.0,
+  "production_within_1e_5_of_saved_trial": true,
+  "production_state_job": "50789904"
+}

@@ -1,0 +1,22 @@
+{
+  "solver": "PySCF direct_spin0 FCI",
+  "converged": true,
+  "energy_total": -5092.8381933518895,
+  "energy_active": -51.710006885494295,
+  "ecore": -5041.128186466395,
+  "energy_rdm": -5092.83819335189,
+  "norm": 1.0000000000000002,
+  "spin_square": 1.4052507602002606e-08,
+  "norb": 14,
+  "nalpha": 9,
+  "nbeta": 9,
+  "determinant_dimension": 4008004,
+  "convergence_tolerance": 1e-10,
+  "elapsed_seconds": 56.15406680107117,
+  "residual_norm": 9.808054423854063e-06,
+  "generating_slurm_job_id": "50726722",
+  "fcidump_sha256": "5452fc1073e77bc47ed70dc56074f038971046ffd534c02a0000d6be0f865497",
+  "coefficient_order": "ci[alpha_string_index,beta_string_index]; ascending binary bit strings in determinant_strings.npy; bit i occupies spatial orbital i",
+  "spin_orbital_order": "all local alpha orbitals ascending, then all local beta orbitals ascending",
+  "rdm2_convention": "rdm2_block2_order[p,r,s,q] = sum_st <p_s^dagger r_t^dagger s_t q_s>"
+}

@@ -1,0 +1,78 @@
+{
+  "step": "09_production_states",
+  "title": "Production CAS20 and CAS14 states",
+  "requires": [
+    "cas20/FCIDUMP",
+    "cas14/FCIDUMP"
+  ],
+  "outputs": [
+    "cas20/energies.json",
+    "cas14/energies.json"
+  ],
+  "resources": {
+    "cpus": 16,
+    "memory_GiB": 160,
+    "walltime": "12:00:00"
+  },
+  "actions": {
+    "default": {
+      "commands": [
+        {
+          "script": "_shared/run_dmrg.py",
+          "cwd": "cas20",
+          "args": [],
+          "refine": false
+        },
+        {
+          "script": "_shared/run_dmrg.py",
+          "cwd": "cas14",
+          "args": [],
+          "refine": false
+        }
+      ],
+      "protect": [
+        "cas20/native_state",
+        "cas14/native_state"
+      ]
+    },
+    "refine-cas20": {
+      "commands": [
+        {
+          "script": "_shared/run_dmrg.py",
+          "cwd": "cas20",
+          "args": [],
+          "refine": true
+        }
+      ],
+      "requires": [
+        "cas20/energies.json",
+        "cas20/native_state"
+      ],
+      "bonds": [
+        3000,
+        4000,
+        5000
+      ]
+    },
+    "refine-cas14": {
+      "commands": [
+        {
+          "script": "_shared/run_dmrg.py",
+          "cwd": "cas14",
+          "args": [],
+          "refine": true
+        }
+      ],
+      "requires": [
+        "cas14/energies.json",
+        "cas14/native_state"
+      ],
+      "bonds": [
+        2500
+      ]
+    }
+  },
+  "env": {
+    "DMRG_STACK_GB": "80"
+  }
+}

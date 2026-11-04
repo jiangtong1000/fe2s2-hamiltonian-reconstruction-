@@ -1,0 +1,72 @@
+{
+  "step": "10_independent_validation",
+  "title": "Direct integrals, embedding and CAS14 FCI",
+  "requires": [
+    "cas20/rdm2.npy",
+    "cas14/rdm2.npy",
+    "reference_zhendong/rdm1.npy"
+  ],
+  "outputs": [
+    "validation/validation_metrics.json",
+    "validation/cas14_fci_comparison.json"
+  ],
+  "resources": {
+    "cpus": 16,
+    "memory_GiB": 64,
+    "walltime": "04:00:00"
+  },
+  "actions": {
+    "default": {
+      "commands": [
+        {
+          "script": "10_independent_validation/run_fci14.py",
+          "cwd": ".",
+          "args": [],
+          "refine": false
+        },
+        {
+          "script": "10_independent_validation/validate_full.py",
+          "cwd": ".",
+          "args": [],
+          "refine": false
+        },
+        {
+          "script": "10_independent_validation/validate_fci14.py",
+          "cwd": ".",
+          "args": [],
+          "refine": false
+        }
+      ]
+    },
+    "smoke": {
+      "commands": [
+        {
+          "script": "10_independent_validation/test_contractions.py",
+          "cwd": ".",
+          "args": [],
+          "refine": false
+        },
+        {
+          "script": "07_ao_cholesky/ao_cholesky.py",
+          "cwd": ".",
+          "args": [
+            "--smoke"
+          ],
+          "refine": false
+        },
+        {
+          "script": "11_assessment/sector_probability.py",
+          "cwd": ".",
+          "args": [
+            "--smoke"
+          ],
+          "refine": false
+        }
+      ],
+      "requires": []
+    }
+  },
+  "env": {
+    "VALIDATION_MEMORY_MB": "24000"
+  }
+}

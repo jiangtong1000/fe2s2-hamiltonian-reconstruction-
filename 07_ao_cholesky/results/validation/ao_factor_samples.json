@@ -1,0 +1,1163 @@
+{
+  "seed": 20261005,
+  "sampling_rule": "32 uniform AO quartets, each augmented with exchange-pair diagonal and Coulomb patterns",
+  "maximum_error": 1.0815901386324045e-10,
+  "rms_error": 1.8626100126232452e-11,
+  "tolerance": 1.06e-09,
+  "passed": true,
+  "samples": [
+    {
+      "indices": [
+        188,
+        224,
+        188,
+        224
+      ],
+      "family": "exchange_pair_diagonal",
+      "direct": 4.906849397001871e-09,
+      "factorized": 4.906849397001888e-09,
+      "error": 1.6543612251060553e-23
+    },
+    {
+      "indices": [
+        188,
+        188,
+        224,
+        224
+      ],
+      "family": "Coulomb",
+      "direct": 0.5573786384493733,
+      "factorized": 0.5573786384493733,
+      "error": 0.0
+    },
+    {
+      "indices": [
+        188,
+        224,
+        104,
+        266
+      ],
+      "family": "general",
+      "direct": 5.99441212861577e-12,
+      "factorized": 5.99441212865366e-12,
+      "error": 3.78903650511839e-23
+    },
+    {
+      "indices": [
+        447,
+        123,
+        447,
+        123
+      ],
+      "family": "exchange_pair_diagonal",
+      "direct": 0.013360853095519093,
+      "factorized": 0.013360853068500232,
+      "error": -2.701886110678675e-11
+    },
+    {
+      "indices": [
+        447,
+        447,
+        123,
+        123
+      ],
+      "family": "Coulomb",
+      "direct": 0.2716830700327858,
+      "factorized": 0.2716830700327857,
+      "error": -1.1102230246251565e-16
+    },
+    {
+      "indices": [
+        447,
+        123,
+        553,
+        296
+      ],
+      "family": "general",
+      "direct": 1.7423764768779172e-09,
+      "factorized": 1.7423765928465386e-09,
+      "error": 1.1596862146156405e-16
+    },
+    {
+      "indices": [
+        187,
+        415,
+        187,
+        415
+      ],
+      "family": "exchange_pair_diagonal",
+      "direct": 0.0,
+      "factorized": 0.0,
+      "error": 0.0
+    },
+    {
+      "indices": [
+        187,
+        187,
+        415,
+        415
+      ],
+      "family": "Coulomb",
+      "direct": 0.1025666286645746,
+      "factorized": 0.10256662866457461,
+      "error": 1.3877787807814457e-17
+    },
+    {
+      "indices": [
+        187,
+        415,
+        517,
+        503
+      ],
+      "family": "general",
+      "direct": 0.0,
+      "factorized": 0.0,
+      "error": 0.0
+    },
+    {
+      "indices": [
+        281,
+        344,
+        281,
+        344
+      ],
+      "family": "exchange_pair_diagonal",
+      "direct": 7.554269465279712e-09,
+      "factorized": 7.550144074034492e-09,
+      "error": -4.1253912452195e-12
+    },
+    {
+      "indices": [
+        281,
+        281,
+        344,
+        344
+      ],
+      "family": "Coulomb",
+      "direct": 0.22708443088984637,
+      "factorized": 0.2270844308898464,
+      "error": 2.7755575615628914e-17
+    },
+    {
+      "indices": [
+        281,
+        344,
+        314,
+        329
+      ],
+      "family": "general",
+      "direct": -3.720900785511007e-08,
+      "factorized": -3.7209401032519016e-08,
+      "error": -3.9317740894269187e-13
+    },
+    {
+      "indices": [
+        28,
+        191,
+        28,
+        191
+      ],
+      "family": "exchange_pair_diagonal",
+      "direct": 3.4061800761099876e-07,
+      "factorized": 3.40617977895656e-07,
+      "error": -2.9715342775499183e-14
+    },
+    {
+      "indices": [
+        28,
+        28,
+        191,
+        191
+      ],
+      "family": "Coulomb",
+      "direct": 0.23948084053597296,
+      "factorized": 0.23948084053597313,
+      "error": 1.6653345369377348e-16
+    },
+    {
+      "indices": [
+        28,
+        191,
+        310,
+        152
+      ],
+      "family": "general",
+      "direct": -1.2241716815473508e-07,
+      "factorized": -1.2241718321516268e-07,
+      "error": -1.5060427596627764e-14
+    },
+    {
+      "indices": [
+        244,
+        399,
+        244,
+        399
+      ],
+      "family": "exchange_pair_diagonal",
+      "direct": 0.0,
+      "factorized": 0.0,
+      "error": 0.0
+    },
+    {
+      "indices": [
+        244,
+        244,
+        399,
+        399
+      ],
+      "family": "Coulomb",
+      "direct": 0.09541340003930225,
+      "factorized": 0.09541340003930225,
+      "error": 0.0
+    },
+    {
+      "indices": [
+        244,
+        399,
+        534,
+        31
+      ],
+      "family": "general",
+      "direct": 0.0,
+      "factorized": 0.0,
+      "error": 0.0
+    },
+    {
+      "indices": [
+        562,
+        158,
+        562,
+        158
+      ],
+      "family": "exchange_pair_diagonal",
+      "direct": 0.0,
+      "factorized": 1.1002946313171599e-53,
+      "error": 1.1002946313171599e-53
+    },
+    {
+      "indices": [
+        562,
+        562,
+        158,
+        158
+      ],
+      "family": "Coulomb",
+      "direct": 0.06588950158630764,
+      "factorized": 0.06588950158630766,
+      "error": 1.3877787807814457e-17
+    },
+    {
+      "indices": [
+        562,
+        158,
+        4,
+        556
+      ],
+      "family": "general",
+      "direct": 0.0,
+      "factorized": 0.0,
+      "error": 0.0
+    },
+    {
+      "indices": [
+        54,
+        59,
+        54,
+        59
+      ],
+      "family": "exchange_pair_diagonal",
+      "direct": 0.01860359483770363,
+      "factorized": 0.01860359483770349,
+      "error": -1.3877787807814457e-16
+    },
+    {
+      "indices": [
+        54,
+        54,
+        59,
+        59
+      ],
+      "family": "Coulomb",
+      "direct": 0.6465687449560328,
+      "factorized": 0.6465687449560327,
+      "error": -1.1102230246251565e-16
+    },
+    {
+      "indices": [
+        54,
+        59,
+        367,
+        638
+      ],
+      "family": "general",
+      "direct": 2.997485822711635e-12,
+      "factorized": 2.997485822702539e-12,
+      "error": -9.096159460598992e-24
+    },
+    {
+      "indices": [
+        207,
+        11,
+        207,
+        11
+      ],
+      "family": "exchange_pair_diagonal",
+      "direct": 7.605776567113302e-06,
+      "factorized": 7.605776558922702e-06,
+      "error": -8.19060022984406e-15
+    },
+    {
+      "indices": [
+        207,
+        207,
+        11,
+        11
+      ],
+      "family": "Coulomb",
+      "direct": 0.21006156651248892,
+      "factorized": 0.2100615665124888,
+      "error": -1.1102230246251565e-16
+    },
+    {
+      "indices": [
+        207,
+        11,
+        94,
+        579
+      ],
+      "family": "general",
+      "direct": 2.4223144436069402e-11,
+      "factorized": 2.422314407441692e-11,
+      "error": -3.616524821819674e-19
+    },
+    {
+      "indices": [
+        369,
+        410,
+        369,
+        410
+      ],
+      "family": "exchange_pair_diagonal",
+      "direct": 0.0,
+      "factorized": 0.0,
+      "error": 0.0
+    },
+    {
+      "indices": [
+        369,
+        369,
+        410,
+        410
+      ],
+      "family": "Coulomb",
+      "direct": 0.0664285640625055,
+      "factorized": 0.06642856406250555,
+      "error": 5.551115123125783e-17
+    },
+    {
+      "indices": [
+        369,
+        410,
+        252,
+        142
+      ],
+      "family": "general",
+      "direct": 0.0,
+      "factorized": 0.0,
+      "error": 0.0
+    },
+    {
+      "indices": [
+        104,
+        566,
+        104,
+        566
+      ],
+      "family": "exchange_pair_diagonal",
+      "direct": 2.529162217095353e-19,
+      "factorized": 2.520639307009465e-19,
+      "error": -8.522910085887796e-22
+    },
+    {
+      "indices": [
+        104,
+        104,
+        566,
+        566
+      ],
+      "family": "Coulomb",
+      "direct": 0.11362996352791022,
+      "factorized": 0.11362996352791026,
+      "error": 4.163336342344337e-17
+    },
+    {
+      "indices": [
+        104,
+        566,
+        556,
+        228
+      ],
+      "family": "general",
+      "direct": 0.0,
+      "factorized": 1.0639716331006074e-37,
+      "error": 1.0639716331006074e-37
+    },
+    {
+      "indices": [
+        34,
+        301,
+        34,
+        301
+      ],
+      "family": "exchange_pair_diagonal",
+      "direct": 4.40569141333265e-30,
+      "factorized": 4.3978960471501094e-30,
+      "error": -7.795366182540503e-33
+    },
+    {
+      "indices": [
+        34,
+        34,
+        301,
+        301
+      ],
+      "family": "Coulomb",
+      "direct": 0.12023475419391158,
+      "factorized": 0.12023475419391158,
+      "error": 0.0
+    },
+    {
+      "indices": [
+        34,
+        301,
+        443,
+        465
+      ],
+      "family": "general",
+      "direct": 5.588196813974179e-23,
+      "factorized": 5.58849699863264e-23,
+      "error": 3.0018465846081604e-27
+    },
+    {
+      "indices": [
+        94,
+        222,
+        94,
+        222
+      ],
+      "family": "exchange_pair_diagonal",
+      "direct": 1.959392028355732e-10,
+      "factorized": 1.9593429546394076e-10,
+      "error": -4.9073716324442536e-15
+    },
+    {
+      "indices": [
+        94,
+        94,
+        222,
+        222
+      ],
+      "family": "Coulomb",
+      "direct": 0.15103555823467096,
+      "factorized": 0.1510355582346734,
+      "error": 2.4424906541753444e-15
+    },
+    {
+      "indices": [
+        94,
+        222,
+        65,
+        567
+      ],
+      "family": "general",
+      "direct": -1.1803450810628717e-19,
+      "factorized": -1.1803451008699973e-19,
+      "error": -1.980712564246969e-27
+    },
+    {
+      "indices": [
+        188,
+        0,
+        188,
+        0
+      ],
+      "family": "exchange_pair_diagonal",
+      "direct": 0.0,
+      "factorized": 0.0,
+      "error": 0.0
+    },
+    {
+      "indices": [
+        188,
+        188,
+        0,
+        0
+      ],
+      "family": "Coulomb",
+      "direct": 0.24108613922734606,
+      "factorized": 0.24108613922734604,
+      "error": -2.7755575615628914e-17
+    },
+    {
+      "indices": [
+        188,
+        0,
+        517,
+        510
+      ],
+      "family": "general",
+      "direct": 0.0,
+      "factorized": 0.0,
+      "error": 0.0
+    },
+    {
+      "indices": [
+        586,
+        95,
+        586,
+        95
+      ],
+      "family": "exchange_pair_diagonal",
+      "direct": 2.696589495329446e-15,
+      "factorized": 2.6813709285287912e-15,
+      "error": -1.521856680065483e-17
+    },
+    {
+      "indices": [
+        586,
+        586,
+        95,
+        95
+      ],
+      "family": "Coulomb",
+      "direct": 0.1439390819743454,
+      "factorized": 0.1439390819743453,
+      "error": -1.1102230246251565e-16
+    },
+    {
+      "indices": [
+        586,
+        95,
+        247,
+        479
+      ],
+      "family": "general",
+      "direct": -6.058696681967085e-25,
+      "factorized": -6.059138354692859e-25,
+      "error": -4.416727257744061e-29
+    },
+    {
+      "indices": [
+        65,
+        39,
+        65,
+        39
+      ],
+      "family": "exchange_pair_diagonal",
+      "direct": 2.6958041863608663e-07,
+      "factorized": 2.6958040336630145e-07,
+      "error": -1.5269785183250143e-14
+    },
+    {
+      "indices": [
+        65,
+        65,
+        39,
+        39
+      ],
+      "family": "Coulomb",
+      "direct": 0.23318626182455804,
+      "factorized": 0.23318626182455804,
+      "error": 0.0
+    },
+    {
+      "indices": [
+        65,
+        39,
+        17,
+        414
+      ],
+      "family": "general",
+      "direct": -6.087455449546344e-14,
+      "factorized": -6.087455442708889e-14,
+      "error": 6.837455051446741e-23
+    },
+    {
+      "indices": [
+        509,
+        433,
+        509,
+        433
+      ],
+      "family": "exchange_pair_diagonal",
+      "direct": 9.994586912316092e-15,
+      "factorized": 9.985629189522488e-15,
+      "error": -8.95772279360384e-18
+    },
+    {
+      "indices": [
+        509,
+        509,
+        433,
+        433
+      ],
+      "family": "Coulomb",
+      "direct": 0.11586872446499207,
+      "factorized": 0.11586872446499215,
+      "error": 8.326672684688674e-17
+    },
+    {
+      "indices": [
+        509,
+        433,
+        392,
+        45
+      ],
+      "family": "general",
+      "direct": -4.0838329561320027e-14,
+      "factorized": -4.083813458105263e-14,
+      "error": 1.9498026739820876e-19
+    },
+    {
+      "indices": [
+        379,
+        218,
+        379,
+        218
+      ],
+      "family": "exchange_pair_diagonal",
+      "direct": 8.23524859283653e-09,
+      "factorized": 8.231608647449472e-09,
+      "error": -3.639945387058346e-12
+    },
+    {
+      "indices": [
+        379,
+        379,
+        218,
+        218
+      ],
+      "family": "Coulomb",
+      "direct": 0.12869796471264833,
+      "factorized": 0.1286979647126481,
+      "error": -2.220446049250313e-16
+    },
+    {
+      "indices": [
+        379,
+        218,
+        152,
+        416
+      ],
+      "family": "general",
+      "direct": 1.6545268424918813e-06,
+      "factorized": 1.6545268798684987e-06,
+      "error": 3.737661734646701e-14
+    },
+    {
+      "indices": [
+        567,
+        159,
+        567,
+        159
+      ],
+      "family": "exchange_pair_diagonal",
+      "direct": 0.0,
+      "factorized": 3.658502982306769e-49,
+      "error": 3.658502982306769e-49
+    },
+    {
+      "indices": [
+        567,
+        567,
+        159,
+        159
+      ],
+      "family": "Coulomb",
+      "direct": 0.06563602733807683,
+      "factorized": 0.06563602733807677,
+      "error": -5.551115123125783e-17
+    },
+    {
+      "indices": [
+        567,
+        159,
+        387,
+        338
+      ],
+      "family": "general",
+      "direct": 0.0,
+      "factorized": 0.0,
+      "error": 0.0
+    },
+    {
+      "indices": [
+        288,
+        597,
+        288,
+        597
+      ],
+      "family": "exchange_pair_diagonal",
+      "direct": 2.462989565976649e-09,
+      "factorized": 2.4627771067436664e-09,
+      "error": -2.1245923298244684e-13
+    },
+    {
+      "indices": [
+        288,
+        288,
+        597,
+        597
+      ],
+      "family": "Coulomb",
+      "direct": 0.15649918679158356,
+      "factorized": 0.15649918679158356,
+      "error": 0.0
+    },
+    {
+      "indices": [
+        288,
+        597,
+        115,
+        182
+      ],
+      "family": "general",
+      "direct": -7.386545054557742e-17,
+      "factorized": -7.386589362876335e-17,
+      "error": -4.430831859288556e-22
+    },
+    {
+      "indices": [
+        342,
+        132,
+        342,
+        132
+      ],
+      "family": "exchange_pair_diagonal",
+      "direct": 1.0450198100101695e-17,
+      "factorized": 1.0449684323670222e-17,
+      "error": -5.137764314732904e-22
+    },
+    {
+      "indices": [
+        342,
+        342,
+        132,
+        132
+      ],
+      "family": "Coulomb",
+      "direct": 0.09989402102273899,
+      "factorized": 0.09989402102273895,
+      "error": -4.163336342344337e-17
+    },
+    {
+      "indices": [
+        342,
+        132,
+        539,
+        367
+      ],
+      "family": "general",
+      "direct": 2.6988030055578765e-11,
+      "factorized": 2.6988030055576545e-11,
+      "error": -2.2198167219684766e-24
+    },
+    {
+      "indices": [
+        231,
+        230,
+        231,
+        230
+      ],
+      "family": "exchange_pair_diagonal",
+      "direct": 0.2783864505291437,
+      "factorized": 0.2783864505238477,
+      "error": -5.295985872066922e-12
+    },
+    {
+      "indices": [
+        231,
+        231,
+        230,
+        230
+      ],
+      "family": "Coulomb",
+      "direct": 1.1251707343468191,
+      "factorized": 1.1251707342424964,
+      "error": -1.0432277264271761e-10
+    },
+    {
+      "indices": [
+        231,
+        230,
+        271,
+        324
+      ],
+      "family": "general",
+      "direct": -3.510218707254365e-05,
+      "factorized": -3.510218700578536e-05,
+      "error": 6.675829187412566e-14
+    },
+    {
+      "indices": [
+        173,
+        348,
+        173,
+        348
+      ],
+      "family": "exchange_pair_diagonal",
+      "direct": 4.0593229165349466e-25,
+      "factorized": 4.0593120321485524e-25,
+      "error": -1.0884386394161988e-30
+    },
+    {
+      "indices": [
+        173,
+        173,
+        348,
+        348
+      ],
+      "family": "Coulomb",
+      "direct": 0.08182480761090048,
+      "factorized": 0.08182480761090047,
+      "error": -1.3877787807814457e-17
+    },
+    {
+      "indices": [
+        173,
+        348,
+        382,
+        456
+      ],
+      "family": "general",
+      "direct": -3.5393228116263026e-15,
+      "factorized": -3.5393227141417497e-15,
+      "error": 9.748455290263039e-23
+    },
+    {
+      "indices": [
+        546,
+        351,
+        546,
+        351
+      ],
+      "family": "exchange_pair_diagonal",
+      "direct": 0.005571169622058339,
+      "factorized": 0.005571169513899325,
+      "error": -1.0815901386324045e-10
+    },
+    {
+      "indices": [
+        546,
+        546,
+        351,
+        351
+      ],
+      "family": "Coulomb",
+      "direct": 0.2643023073653928,
+      "factorized": 0.2643023073653926,
+      "error": -1.6653345369377348e-16
+    },
+    {
+      "indices": [
+        546,
+        351,
+        137,
+        466
+      ],
+      "family": "general",
+      "direct": -9.951982964762697e-05,
+      "factorized": -9.951982983399723e-05,
+      "error": -1.8637026058705708e-13
+    },
+    {
+      "indices": [
+        311,
+        69,
+        311,
+        69
+      ],
+      "family": "exchange_pair_diagonal",
+      "direct": 4.954065046723626e-07,
+      "factorized": 4.954065044789996e-07,
+      "error": -1.9336301053981663e-16
+    },
+    {
+      "indices": [
+        311,
+        311,
+        69,
+        69
+      ],
+      "family": "Coulomb",
+      "direct": 0.14015666313475833,
+      "factorized": 0.1401566631347583,
+      "error": -2.7755575615628914e-17
+    },
+    {
+      "indices": [
+        311,
+        69,
+        396,
+        496
+      ],
+      "family": "general",
+      "direct": 5.367055341989074e-15,
+      "factorized": 5.367055507470921e-15,
+      "error": 1.6548184646639396e-22
+    },
+    {
+      "indices": [
+        103,
+        211,
+        103,
+        211
+      ],
+      "family": "exchange_pair_diagonal",
+      "direct": 6.193195017480656e-06,
+      "factorized": 6.193120103663466e-06,
+      "error": -7.491381718960192e-11
+    },
+    {
+      "indices": [
+        103,
+        103,
+        211,
+        211
+      ],
+      "family": "Coulomb",
+      "direct": 0.1544814941203299,
+      "factorized": 0.15448149412033013,
+      "error": 2.220446049250313e-16
+    },
+    {
+      "indices": [
+        103,
+        211,
+        234,
+        37
+      ],
+      "family": "general",
+      "direct": -5.003564439011995e-09,
+      "factorized": -5.003564031469291e-09,
+      "error": 4.0754270361853556e-16
+    },
+    {
+      "indices": [
+        225,
+        99,
+        225,
+        99
+      ],
+      "family": "exchange_pair_diagonal",
+      "direct": 1.2962305981949812e-09,
+      "factorized": 1.2962305963944957e-09,
+      "error": -1.8004855754456916e-18
+    },
+    {
+      "indices": [
+        225,
+        225,
+        99,
+        99
+      ],
+      "family": "Coulomb",
+      "direct": 0.23914563857340335,
+      "factorized": 0.23914563857340318,
+      "error": -1.6653345369377348e-16
+    },
+    {
+      "indices": [
+        225,
+        99,
+        12,
+        318
+      ],
+      "family": "general",
+      "direct": -1.5842126456822465e-28,
+      "factorized": -1.584212647745623e-28,
+      "error": -2.063376563893115e-37
+    },
+    {
+      "indices": [
+        287,
+        470,
+        287,
+        470
+      ],
+      "family": "exchange_pair_diagonal",
+      "direct": 0.0,
+      "factorized": 3.881364719594324e-51,
+      "error": 3.881364719594324e-51
+    },
+    {
+      "indices": [
+        287,
+        287,
+        470,
+        470
+      ],
+      "family": "Coulomb",
+      "direct": 0.09588864479641498,
+      "factorized": 0.09588864479641504,
+      "error": 5.551115123125783e-17
+    },
+    {
+      "indices": [
+        287,
+        470,
+        232,
+        185
+      ],
+      "family": "general",
+      "direct": -1.4004532096799875e-30,
+      "factorized": -1.4004574082912486e-30,
+      "error": -4.198611261118052e-36
+    },
+    {
+      "indices": [
+        317,
+        306,
+        317,
+        306
+      ],
+      "family": "exchange_pair_diagonal",
+      "direct": 0.003750680906510946,
+      "factorized": 0.003750680841963819,
+      "error": -6.454712675810215e-11
+    },
+    {
+      "indices": [
+        317,
+        317,
+        306,
+        306
+      ],
+      "family": "Coulomb",
+      "direct": 0.4146432962178803,
+      "factorized": 0.4146432962178803,
+      "error": 0.0
+    },
+    {
+      "indices": [
+        317,
+        306,
+        332,
+        267
+      ],
+      "family": "general",
+      "direct": -1.1973027887209029e-30,
+      "factorized": -1.1815561034117924e-30,
+      "error": 1.5746685309110468e-32
+    },
+    {
+      "indices": [
+        379,
+        198,
+        379,
+        198
+      ],
+      "family": "exchange_pair_diagonal",
+      "direct": 1.121200921442757e-14,
+      "factorized": 1.1204245403144988e-14,
+      "error": -7.76381128258218e-18
+    },
+    {
+      "indices": [
+        379,
+        379,
+        198,
+        198
+      ],
+      "family": "Coulomb",
+      "direct": 0.12696770277917657,
+      "factorized": 0.12696770277917663,
+      "error": 5.551115123125783e-17
+    },
+    {
+      "indices": [
+        379,
+        198,
+        652,
+        56
+      ],
+      "family": "general",
+      "direct": 0.0,
+      "factorized": -1.3625076267990064e-35,
+      "error": -1.3625076267990064e-35
+    },
+    {
+      "indices": [
+        124,
+        452,
+        124,
+        452
+      ],
+      "family": "exchange_pair_diagonal",
+      "direct": 0.003186180512350414,
+      "factorized": 0.003186180503210348,
+      "error": -9.140066307977701e-12
+    },
+    {
+      "indices": [
+        124,
+        124,
+        452,
+        452
+      ],
+      "family": "Coulomb",
+      "direct": 0.26288495666757217,
+      "factorized": 0.26288495665901107,
+      "error": -8.561096276338276e-12
+    },
+    {
+      "indices": [
+        124,
+        452,
+        192,
+        194
+      ],
+      "family": "general",
+      "direct": 2.0759533984309367e-06,
+      "factorized": 2.075953408573145e-06,
+      "error": 1.0142208186031225e-14
+    },
+    {
+      "indices": [
+        190,
+        487,
+        190,
+        487
+      ],
+      "family": "exchange_pair_diagonal",
+      "direct": 0.0,
+      "factorized": 0.0,
+      "error": 0.0
+    },
+    {
+      "indices": [
+        190,
+        190,
+        487,
+        487
+      ],
+      "family": "Coulomb",
+      "direct": 0.09741110626165618,
+      "factorized": 0.09741110626165626,
+      "error": 8.326672684688674e-17
+    },
+    {
+      "indices": [
+        190,
+        487,
+        467,
+        591
+      ],
+      "family": "general",
+      "direct": 0.0,
+      "factorized": 0.0,
+      "error": 0.0
+    }
+  ],
+  "caveat": "AO sample check only; full MO virtual couplings and energy checks remain separate requirements"
+}

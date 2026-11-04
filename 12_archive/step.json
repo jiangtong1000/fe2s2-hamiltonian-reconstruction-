@@ -1,0 +1,28 @@
+{
+  "step": "12_archive",
+  "title": "Reproducibility manifest and storage policy",
+  "requires": [
+    "validation/validation_metrics.json",
+    "validation/compression_assessment.json"
+  ],
+  "outputs": [
+    "run_manifest.json"
+  ],
+  "resources": {
+    "cpus": 2,
+    "memory_GiB": 8,
+    "walltime": "02:00:00"
+  },
+  "actions": {
+    "default": {
+      "commands": [
+        {
+          "script": "12_archive/archive_run.py",
+          "cwd": ".",
+          "args": [],
+          "refine": false
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "rank": 9218,
+  "nao": 662,
+  "npair": 219453,
+  "threshold": 1e-09,
+  "residual_max": 9.958018136178543e-10,
+  "residual_min": -3.2688759041813553e-14,
+  "ranks_at_threshold": {
+    "0.0001": 3079,
+    "1e-05": 3838,
+    "1e-06": 4873,
+    "1e-07": 6092,
+    "1e-08": 7545,
+    "1e-09": 9218
+  },
+  "elapsed_seconds": 2664.8680081367493,
+  "pair_convention": "numpy.tril_indices; unweighted symmetric AO pairs"
+}

@@ -1,0 +1,31 @@
+{
+  "step": "08_full_hamiltonian",
+  "title": "Full retained Hamiltonian and both CAS Hamiltonians",
+  "requires": [
+    "orbitals/index_maps.json",
+    "ao_factorization/chol_ao_packed.npy"
+  ],
+  "outputs": [
+    "full_hamiltonian/schema.json"
+  ],
+  "resources": {
+    "cpus": 16,
+    "memory_GiB": 64,
+    "walltime": "04:00:00"
+  },
+  "actions": {
+    "default": {
+      "commands": [
+        {
+          "script": "08_full_hamiltonian/build_production.py",
+          "cwd": ".",
+          "args": [],
+          "refine": false
+        }
+      ],
+      "protect": [
+        "full_hamiltonian/chol.npy"
+      ]
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "step": "01_inputs",
+  "title": "Inputs and provenance",
+  "requires": [],
+  "outputs": [
+    "geometry.xyz",
+    "reference_zhendong/FCIDUMP"
+  ],
+  "resources": {
+    "cpus": 1,
+    "memory_GiB": 2,
+    "walltime": "00:10:00"
+  },
+  "actions": {
+    "default": {
+      "commands": [
+        {
+          "script": "01_inputs/prepare_inputs.py",
+          "cwd": ".",
+          "args": [],
+          "refine": false
+        }
+      ],
+      "protect": [
+        "geometry.xyz"
+      ]
+    }
+  }
+}

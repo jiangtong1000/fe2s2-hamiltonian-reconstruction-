@@ -1,0 +1,7 @@
+{
+  "stage": "initial candidate before occupation refinement",
+  "maximum_coefficient_error": 2.013056388250334e-12,
+  "tolerance": 1e-10,
+  "passed": true,
+  "note": "Repeat for final production basis; this check does not validate final Hamiltonian blocks."
+}

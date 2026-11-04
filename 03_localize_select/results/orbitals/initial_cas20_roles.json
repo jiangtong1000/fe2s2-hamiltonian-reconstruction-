@@ -1,0 +1,148 @@
+{
+  "basis": "orbitals/mo_coeff_20_initial.npy",
+  "geometry": "geometry.xyz",
+  "columns": [
+    {
+      "cas20_index_zero_based": 0,
+      "initial_complete_partition_index": 78,
+      "geometry_atom_index_zero_based": 2,
+      "geometry_atom_row_one_based": 3,
+      "chemical_role": "terminal S 3p, Fe-directed"
+    },
+    {
+      "cas20_index_zero_based": 1,
+      "initial_complete_partition_index": 79,
+      "geometry_atom_index_zero_based": 3,
+      "geometry_atom_row_one_based": 4,
+      "chemical_role": "terminal S 3p, Fe-directed"
+    },
+    {
+      "cas20_index_zero_based": 2,
+      "initial_complete_partition_index": 80,
+      "geometry_atom_index_zero_based": 0,
+      "geometry_atom_row_one_based": 1,
+      "chemical_role": "Fe 3d"
+    },
+    {
+      "cas20_index_zero_based": 3,
+      "initial_complete_partition_index": 81,
+      "geometry_atom_index_zero_based": 0,
+      "geometry_atom_row_one_based": 1,
+      "chemical_role": "Fe 3d"
+    },
+    {
+      "cas20_index_zero_based": 4,
+      "initial_complete_partition_index": 82,
+      "geometry_atom_index_zero_based": 0,
+      "geometry_atom_row_one_based": 1,
+      "chemical_role": "Fe 3d"
+    },
+    {
+      "cas20_index_zero_based": 5,
+      "initial_complete_partition_index": 83,
+      "geometry_atom_index_zero_based": 0,
+      "geometry_atom_row_one_based": 1,
+      "chemical_role": "Fe 3d"
+    },
+    {
+      "cas20_index_zero_based": 6,
+      "initial_complete_partition_index": 84,
+      "geometry_atom_index_zero_based": 0,
+      "geometry_atom_row_one_based": 1,
+      "chemical_role": "Fe 3d"
+    },
+    {
+      "cas20_index_zero_based": 7,
+      "initial_complete_partition_index": 85,
+      "geometry_atom_index_zero_based": 1,
+      "geometry_atom_row_one_based": 2,
+      "chemical_role": "bridging S 3p"
+    },
+    {
+      "cas20_index_zero_based": 8,
+      "initial_complete_partition_index": 86,
+      "geometry_atom_index_zero_based": 4,
+      "geometry_atom_row_one_based": 5,
+      "chemical_role": "bridging S 3p"
+    },
+    {
+      "cas20_index_zero_based": 9,
+      "initial_complete_partition_index": 87,
+      "geometry_atom_index_zero_based": 1,
+      "geometry_atom_row_one_based": 2,
+      "chemical_role": "bridging S 3p"
+    },
+    {
+      "cas20_index_zero_based": 10,
+      "initial_complete_partition_index": 88,
+      "geometry_atom_index_zero_based": 4,
+      "geometry_atom_row_one_based": 5,
+      "chemical_role": "bridging S 3p"
+    },
+    {
+      "cas20_index_zero_based": 11,
+      "initial_complete_partition_index": 89,
+      "geometry_atom_index_zero_based": 1,
+      "geometry_atom_row_one_based": 2,
+      "chemical_role": "bridging S 3p"
+    },
+    {
+      "cas20_index_zero_based": 12,
+      "initial_complete_partition_index": 90,
+      "geometry_atom_index_zero_based": 4,
+      "geometry_atom_row_one_based": 5,
+      "chemical_role": "bridging S 3p"
+    },
+    {
+      "cas20_index_zero_based": 13,
+      "initial_complete_partition_index": 91,
+      "geometry_atom_index_zero_based": 5,
+      "geometry_atom_row_one_based": 6,
+      "chemical_role": "Fe 3d"
+    },
+    {
+      "cas20_index_zero_based": 14,
+      "initial_complete_partition_index": 92,
+      "geometry_atom_index_zero_based": 5,
+      "geometry_atom_row_one_based": 6,
+      "chemical_role": "Fe 3d"
+    },
+    {
+      "cas20_index_zero_based": 15,
+      "initial_complete_partition_index": 93,
+      "geometry_atom_index_zero_based": 5,
+      "geometry_atom_row_one_based": 6,
+      "chemical_role": "Fe 3d"
+    },
+    {
+      "cas20_index_zero_based": 16,
+      "initial_complete_partition_index": 94,
+      "geometry_atom_index_zero_based": 5,
+      "geometry_atom_row_one_based": 6,
+      "chemical_role": "Fe 3d"
+    },
+    {
+      "cas20_index_zero_based": 17,
+      "initial_complete_partition_index": 95,
+      "geometry_atom_index_zero_based": 5,
+      "geometry_atom_row_one_based": 6,
+      "chemical_role": "Fe 3d"
+    },
+    {
+      "cas20_index_zero_based": 18,
+      "initial_complete_partition_index": 96,
+      "geometry_atom_index_zero_based": 6,
+      "geometry_atom_row_one_based": 7,
+      "chemical_role": "terminal S 3p, Fe-directed"
+    },
+    {
+      "cas20_index_zero_based": 19,
+      "initial_complete_partition_index": 97,
+      "geometry_atom_index_zero_based": 7,
+      "geometry_atom_row_one_based": 8,
+      "chemical_role": "terminal S 3p, Fe-directed"
+    }
+  ],
+  "historical_comparison": "Matches the documented role ordering and Fe block indices. Individual 2012 sulfur labels are not assigned to the distinct 2014 coordinates without an independent atom correspondence.",
+  "correlated_natural_basis_note": "These column labels apply before U_natural_20 rotation; use final shell weights to describe natural orbitals."
+}

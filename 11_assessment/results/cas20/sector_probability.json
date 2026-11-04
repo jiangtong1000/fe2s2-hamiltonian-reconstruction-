@@ -1,0 +1,17 @@
+{
+  "sites_zero_based": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "probability": 0.940362673067073,
+  "norm": 0.9999999999999987,
+  "method": "SU2 scalar MPO product of local n_alpha*n_beta projectors",
+  "interpretation": "CAS20 probability of the specified fixed-double sector; not overlap with the reoptimized CAS14 state",
+  "fcidump_sha256": "c081c9e41d9cb8c33a15c2e40636429c079eb21fd29e84e04a48b6886a716bad",
+  "state_energy": -5092.872362559896,
+  "rdm1_sha256": "c24b5296ad921a03dfffaacb62980c3048591fdc84e9d27c8a9519cd9f67afcb"
+}

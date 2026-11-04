@@ -1,0 +1,11 @@
+{
+  "status": "accepted_for_historical_density_comparison",
+  "job": 50710665,
+  "energy_change_Eh": -9.049860238974361e-07,
+  "maximum_occupation_change": 1.547055411443843e-05,
+  "K6_subspace_max_sine_angle": 3.515020950269958e-05,
+  "energy_difference_from_pinned_reference_Eh": 5.051970504155179e-07,
+  "RDM_energy_error_Eh": 7.958078640513122e-12,
+  "native_state_reload_energy_error_Eh": 7.815970093361102e-12,
+  "interpretation": "Successive two-site bond-dimension stages support adequate reference density resolution for this comparison. This is not an exact-RDM claim or AO-subspace identity proof."
+}

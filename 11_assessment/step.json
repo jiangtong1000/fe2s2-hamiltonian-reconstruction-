@@ -1,0 +1,68 @@
+{
+  "step": "11_assessment",
+  "title": "Historical comparison and compression assessment",
+  "requires": [
+    "cas20/rdm2.npy",
+    "cas14/rdm2.npy",
+    "reference_zhendong/rdm1.npy"
+  ],
+  "outputs": [
+    "validation/occupation_comparison_production.json",
+    "validation/compression_assessment.json"
+  ],
+  "resources": {
+    "cpus": 4,
+    "memory_GiB": 16,
+    "walltime": "02:00:00"
+  },
+  "actions": {
+    "default": {
+      "commands": [
+        {
+          "script": "11_assessment/analyze_states.py",
+          "cwd": ".",
+          "args": [
+            "--stage",
+            "provisional"
+          ],
+          "refine": false
+        },
+        {
+          "script": "11_assessment/analyze_states.py",
+          "cwd": ".",
+          "args": [
+            "--stage",
+            "production"
+          ],
+          "refine": false
+        },
+        {
+          "script": "_shared/cross_basis_energy.py",
+          "cwd": ".",
+          "args": [],
+          "refine": false
+        },
+        {
+          "script": "11_assessment/plot_diagnostics.py",
+          "cwd": ".",
+          "args": [],
+          "refine": false
+        },
+        {
+          "script": "11_assessment/summarize.py",
+          "cwd": ".",
+          "args": [],
+          "refine": false
+        }
+      ],
+      "requires": [
+        "cas20/rdm2.npy",
+        "cas14/rdm2.npy",
+        "cas20_provisional/rdm2.npy",
+        "reference_zhendong/rdm1.npy",
+        "validation/validation_metrics.json",
+        "validation/cas14_fci_comparison.json"
+      ]
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "status": "scientific_assessment_complete",
+  "cas20_state_job": "50789904",
+  "cas20_state_metadata_sha256": "bc2c75d82797da16eab4a01b96af58dce211d0f02ab1ff5b05b85dfb8dda90f7",
+  "energy_accuracy": {
+    "target_Eh": 1e-05,
+    "last_bond_change_Eh": -5.313667315931525e-06,
+    "interpretation": "Empirical successive-bond convergence supports the requested target; not a rigorous error bound."
+  },
+  "occupation_resolution": {
+    "maximum_last_bond_change": 5.1965435194922804e-05,
+    "reference_maximum_last_bond_change": 1.5470554113772295e-05,
+    "interpretation": "Adequate to assess the six-orbital screening boundary and the leading historical spectral differences; differences below these empirical resolutions are not individually resolved."
+  },
+  "historical_comparison": {
+    "maximum_sorted_occupation_difference": 0.001900659901313162,
+    "rms_sorted_occupation_difference": 0.0009048764557709264,
+    "total_energy_difference_reconstructed_minus_reference_Eh": -0.0014299950926215388,
+    "interpretation": "Chemically consistent construction and similar but measurably distinct occupation spectra. These diagnostics do not establish identical Hamiltonians or AO-space subspaces; historical AO coefficients and exact parent/localization details are unavailable. Orbital selection did not use energy matching."
+  },
+  "compression": {
+    "status": "quantified_aggressive_CAS14_candidate_not_energy_equivalent_to_CAS20",
+    "delta_energy_freeze_Eh": 0.034169208876846824,
+    "delta_energy_freeze_mEh": 34.169208876846824,
+    "K6_double_sector_probability": 0.940362673067073,
+    "excluded_sector_weight": 0.059637326932927004,
+    "sector_probability_change_from_bond4000": -1.802353607738283e-05,
+    "density_lower_bound": 0.9297541039489619,
+    "fixed_K6_subspace_sine_vs_production_NO": 0.00019640399778956543,
+    "chemistry": "First four K6 orbitals have predominant terminal-ligand S3p character; last two predominant bridging-S3p character, with Fe and other ligand mixing. Full shell weights are preserved.",
+    "chemistry_artifact": "orbitals/K6_character.json",
+    "chemistry_occupation_provenance": "The occupation entries in K6_character.json belong to the provisional density that defined the fixed basis. Final fixed-basis occupations are in compression_assessment.json.",
+    "interpretation": "The six orbitals pass the 1.97 occupation screen and are stable with bond dimension, but fixing them doubly occupied loses about 34.17 mEh. Thus this reduction is not an energy-preserving replacement at the current 1e-5 Eh solver scale. Deliver CAS14 as a quantitatively characterized compression experiment alongside the validated full/CAS20 reference. No application-specific acceptable-cost cutoff has been imposed. Sector weight is not fidelity with the reoptimized CAS14 ground state and does not predict future AFQMC bias.",
+    "application_specific_utility": "Undecided; future VCE/AFQMC study is outside this phase."
+  },
+  "preserved_scope": {
+    "full_partition": "F44 contracted only; retained I34/K6/A14/V564",
+    "full_orbitals": 618,
+    "full_electrons": 98,
+    "trial_fixed_occupations_restrict_propagation": false,
+    "AFQMC_code_required_now": false,
+    "truncated_MSD_exported": false
+  },
+  "evidence": [
+    "validation/cas20_stage5_review.json",
+    "validation/reference_convergence_review.json",
+    "validation/occupation_comparison_production.json",
+    "validation/compression_assessment.json",
+    "cas20/sector_probability.json",
+    "validation/cas14_fci_comparison.json"
+  ]
+}

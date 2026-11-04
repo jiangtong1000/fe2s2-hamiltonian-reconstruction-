@@ -1,0 +1,80 @@
+[
+  {
+    "stage": 0,
+    "max_bond_dimension": 1200,
+    "energy_total": -5092.838149386099,
+    "initial_site_algorithm": 2,
+    "two_site_sweeps": 10,
+    "one_site_sweeps": 2,
+    "occupations": [
+      1.9577838643623229,
+      1.9553119018020109,
+      1.954400480558048,
+      1.9541737364853902,
+      1.4420911327479873,
+      1.4367114665921752,
+      1.2148909235473664,
+      1.1370874942596891,
+      1.0581951739146398,
+      0.9454884680219788,
+      0.9056576529458042,
+      0.828467873925838,
+      0.6065946252800413,
+      0.6031452055566996
+    ],
+    "occupation_max_change": null,
+    "sweep_counts_interpretation": "Requested schedule maxima; the solver may stop early at tol=1e-8. Actual executed sweeps are recorded in the run output."
+  },
+  {
+    "stage": 1,
+    "max_bond_dimension": 1600,
+    "energy_total": -5092.838190881433,
+    "initial_site_algorithm": 2,
+    "two_site_sweeps": 4,
+    "one_site_sweeps": 2,
+    "occupations": [
+      1.9576655134998657,
+      1.9552006824196229,
+      1.9543295704485768,
+      1.9540851199222937,
+      1.4419553104247023,
+      1.4366495652887872,
+      1.2149646782175423,
+      1.1372536775799327,
+      1.058952928195411,
+      0.9448796207834465,
+      0.9055959961319211,
+      0.8284774246378328,
+      0.606672608375979,
+      0.6033173040741008
+    ],
+    "occupation_max_change": 0.0007577542807712945,
+    "sweep_counts_interpretation": "Requested schedule maxima; the solver may stop early at tol=1e-8. Actual executed sweeps are recorded in the run output."
+  },
+  {
+    "stage": 2,
+    "max_bond_dimension": 2000,
+    "energy_total": -5092.838193351019,
+    "initial_site_algorithm": 2,
+    "two_site_sweeps": 4,
+    "one_site_sweeps": 2,
+    "occupations": [
+      1.957658325944084,
+      1.955193528855965,
+      1.9543233541012108,
+      1.9540792280304269,
+      1.4419510391818533,
+      1.4366457319094321,
+      1.2149673081274786,
+      1.1372629945413955,
+      1.0589727241399605,
+      0.9448715118749903,
+      0.9055928462215367,
+      0.8284799900829991,
+      0.6066777937885873,
+      0.6033236232000997
+    ],
+    "occupation_max_change": 1.979594454937228e-05,
+    "sweep_counts_interpretation": "Requested schedule maxima; the solver may stop early at tol=1e-8. Actual executed sweeps are recorded in the run output."
+  }
+]

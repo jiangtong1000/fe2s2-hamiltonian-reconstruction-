@@ -1,0 +1,13 @@
+{
+  "reference.FCIDUMP": {
+    "description": "Historical CAS(30e,20o) FCIDUMP of Zhendong Li's Fe2S2 active-space model; third-party data, not redistributed in this repository",
+    "repository": "https://github.com/zhendongli2008/Active-space-model-for-Iron-Sulfur-Clusters",
+    "commit": "1c115694237de0a3b385c270a5473e56544cee49",
+    "path": "Fe2S2_and_Fe4S4/Fe2S2/fe2s2",
+    "url": "https://raw.githubusercontent.com/zhendongli2008/Active-space-model-for-Iron-Sulfur-Clusters/1c115694237de0a3b385c270a5473e56544cee49/Fe2S2_and_Fe4S4/Fe2S2/fe2s2",
+    "sha256": "95d8786af06eeea2107e19ffd98c66a6ca97fc8c9864175a4f6d64512b6f2df9",
+    "size_bytes": 965460,
+    "local_copy_variable": "FE2S2_REFERENCE_FCIDUMP",
+    "target": "reference_zhendong/FCIDUMP"
+  }
+}

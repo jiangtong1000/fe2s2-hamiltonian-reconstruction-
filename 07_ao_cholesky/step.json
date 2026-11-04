@@ -1,0 +1,38 @@
+{
+  "step": "07_ao_cholesky",
+  "title": "Direct AO Cholesky factorization",
+  "requires": [
+    "geometry.xyz",
+    "parent/scf.chk",
+    "inputs/basis.json"
+  ],
+  "outputs": [
+    "ao_factorization/metadata.json"
+  ],
+  "resources": {
+    "cpus": 16,
+    "memory_GiB": 64,
+    "walltime": "04:00:00"
+  },
+  "actions": {
+    "default": {
+      "commands": [
+        {
+          "script": "07_ao_cholesky/ao_cholesky.py",
+          "cwd": ".",
+          "args": [],
+          "refine": false
+        },
+        {
+          "script": "07_ao_cholesky/check_ao_factors.py",
+          "cwd": ".",
+          "args": [],
+          "refine": false
+        }
+      ],
+      "protect": [
+        "ao_factorization/chol_ao_packed.npy"
+      ]
+    }
+  }
+}

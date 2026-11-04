@@ -1,0 +1,39 @@
+{
+  "step": "03_localize_select",
+  "title": "Frozen core, split localization and chemical CAS20",
+  "requires": [
+    "parent/scf.chk"
+  ],
+  "outputs": [
+    "orbitals/chemical_review.json"
+  ],
+  "resources": {
+    "cpus": 8,
+    "memory_GiB": 32,
+    "walltime": "02:00:00"
+  },
+  "actions": {
+    "default": {
+      "commands": [
+        {
+          "script": "03_localize_select/construct_orbitals.py",
+          "cwd": ".",
+          "args": [
+            "--nfrozen",
+            "44"
+          ],
+          "refine": false
+        },
+        {
+          "script": "03_localize_select/review_selection.py",
+          "cwd": ".",
+          "args": [],
+          "refine": false
+        }
+      ],
+      "protect": [
+        "orbitals/selection_report.json"
+      ]
+    }
+  }
+}

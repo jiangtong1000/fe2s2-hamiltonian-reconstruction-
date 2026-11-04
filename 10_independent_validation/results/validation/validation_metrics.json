@@ -1,0 +1,603 @@
+{
+  "status": "numerical_checks_passed",
+  "tolerances": {
+    "orthonormality": 1e-10,
+    "internal_integral": 1e-10,
+    "direct_energy_Eh": 1e-05,
+    "sampled_direct_ERI_Eh": 1e-06,
+    "embedded_rdm_Eh": 1e-07
+  },
+  "checks": {
+    "complete_orthonormality": {
+      "max_error": 7.490813525024009e-13,
+      "passed": true
+    },
+    "saved_basis_transformations": {
+      "maximum_coefficient_error": 2.0126122990404838e-12,
+      "convention": "C_final_complete = C_parent_UNO @ selection_from_parent @ final_partition_from_initial",
+      "passed": true
+    },
+    "partition_and_nesting": {
+      "passed": true,
+      "nfrozen": 44,
+      "nretained": 618
+    },
+    "cas20_cross_basis_trial": {
+      "provisional_state_production_energy": -5092.87234570672,
+      "provisional_state_direct_energy": -5092.872345720499,
+      "production_minus_direct_same_state": 1.3778844731859863e-08,
+      "integral_vs_density_rotation_error": 9.094947017729282e-13,
+      "production_fcidump_sha256": "c081c9e41d9cb8c33a15c2e40636429c079eb21fd29e84e04a48b6886a716bad",
+      "source_rdm_sha256": {
+        "rdm1.npy": "02b8256d53f16d2f757eecfe3ba7a0be14951731fbc61840d1494814ba79bf9f",
+        "rdm2.npy": "e3ebfe5cd86937c20512505158c6ed5a06899dd13ed5d3264774f5485ad57187"
+      },
+      "source_state_job": "50710669",
+      "interpretation": "Variational trial energy in the same production Hamiltonian. A higher production DMRG energy implies at least that energy error; this trial is not an exact ground-state bound from below.",
+      "passed": true,
+      "production_energy_excess_above_saved_trial": -1.6853176020958927e-05,
+      "production_energy_error_lower_bound": 0.0,
+      "production_within_1e_5_of_saved_trial": true,
+      "production_state_job": "50789904"
+    },
+    "cas20_variational_convergence_crosscheck": {
+      "energy_error_lower_bound": 0.0,
+      "passed": true,
+      "note": "Necessary check against an existing trial; not sufficient to certify the ground state"
+    },
+    "cas20_internal_integrals": {
+      "h1_max_error": 5.288212359330635e-14,
+      "eri_max_error": 4.440892098500626e-16,
+      "scalar_error": 0.0,
+      "passed": true
+    },
+    "cas20_direct_integrals": {
+      "h1_max_error": 4.973568223931579e-10,
+      "eri_max_error": 6.203737523691188e-11,
+      "scalar_error": -4.635694494936615e-09,
+      "passed": true
+    },
+    "cas20_solver_convergence": {
+      "last_bond_stage_energy_change": -5.313667315931525e-06,
+      "target_Eh": 1e-05,
+      "passed": true,
+      "caveat": "Successive stages provide convergence evidence, not a rigorous absolute-error bound"
+    },
+    "cas20_embedded_and_direct_energies": {
+      "energy_solver": -5092.872362559896,
+      "energy_embedded": -5092.872362559905,
+      "energy_direct": -5092.872362573669,
+      "embedded_error": -9.094947017729282e-12,
+      "direct_error": -1.3773387763649225e-08,
+      "passed": true
+    },
+    "cas20_factorization_sensitivity": {
+      "tight_state_tight_energy": -5092.872362559896,
+      "tight_state_loose_energy": -5092.872362432618,
+      "loose_minus_tight": 1.2727832654491067e-07,
+      "passed": true,
+      "note": "Fixed-state expectation sensitivity, not a bound on solver error"
+    },
+    "cas14_internal_integrals": {
+      "h1_max_error": 5.38377935982437e-14,
+      "eri_max_error": 4.440892098500626e-16,
+      "scalar_error": 0.0,
+      "passed": true
+    },
+    "cas14_direct_integrals": {
+      "h1_max_error": 5.734710484261996e-10,
+      "eri_max_error": 6.203759728151681e-11,
+      "scalar_error": -6.447407940868288e-09,
+      "passed": true
+    },
+    "cas14_solver_convergence": {
+      "last_bond_stage_energy_change": -2.469586434017401e-06,
+      "target_Eh": 1e-05,
+      "passed": true,
+      "caveat": "Successive stages provide convergence evidence, not a rigorous absolute-error bound"
+    },
+    "cas14_embedded_and_direct_energies": {
+      "energy_solver": -5092.838193351019,
+      "energy_embedded": -5092.838193351017,
+      "energy_direct": -5092.838193364761,
+      "embedded_error": 1.8189894035458565e-12,
+      "direct_error": -1.3741555449087173e-08,
+      "passed": true
+    },
+    "cas14_factorization_sensitivity": {
+      "tight_state_tight_energy": -5092.838193351018,
+      "tight_state_loose_energy": -5092.8381932243265,
+      "loose_minus_tight": 1.2669170246226713e-07,
+      "passed": true,
+      "note": "Fixed-state expectation sensitivity, not a bound on solver error"
+    },
+    "sequential_freezing": {
+      "h1_max_error": 1.687538997430238e-14,
+      "scalar_error": 3.637978807091713e-12,
+      "eri_max_error": 1.6653345369377348e-16,
+      "passed": true
+    },
+    "full_physical_one_body": {
+      "h1_max_error": 6.390500573161262e-09,
+      "scalar_error": 2.025444700848311e-09,
+      "passed": true
+    },
+    "external_virtual_couplings": {
+      "one_body_blocks": {
+        "I": {
+          "h1_frobenius_norm": 9.431321234329245,
+          "h1_max_abs": 0.9285428888724999,
+          "h1_example_indices": [
+            17,
+            70
+          ],
+          "h1_direct_error_max": 2.3812327804018096e-10
+        },
+        "K6": {
+          "h1_frobenius_norm": 5.348930624721758,
+          "h1_max_abs": 1.4847056034613726,
+          "h1_example_indices": [
+            34,
+            60
+          ],
+          "h1_direct_error_max": 2.8314742217538935e-10
+        },
+        "A14": {
+          "h1_frobenius_norm": 12.73547950361094,
+          "h1_max_abs": 2.6831529102036367,
+          "h1_example_indices": [
+            45,
+            58
+          ],
+          "h1_direct_error_max": 4.0694944636321395e-10
+        }
+      },
+      "eri_families": [
+        {
+          "block": "I",
+          "family": "paqb",
+          "count": 144,
+          "max_abs_direct": 0.02210411728702276,
+          "rms_direct": 0.003194904079623961,
+          "max_error": 2.281010623439439e-11,
+          "rms_error": 4.398724360477124e-12,
+          "representative_full_indices": [
+            17,
+            70,
+            17,
+            70
+          ],
+          "direct_value": 0.02210411728702276,
+          "reconstructed_value": 0.022104117278974267
+        },
+        {
+          "block": "I",
+          "family": "pqab",
+          "count": 144,
+          "max_abs_direct": 0.3772345726445766,
+          "rms_direct": 0.08234076487961137,
+          "max_error": 2.018624156718829e-11,
+          "rms_error": 3.770464266171492e-12,
+          "representative_full_indices": [
+            17,
+            17,
+            70,
+            70
+          ],
+          "direct_value": 0.3772345726445766,
+          "reconstructed_value": 0.3772345726378109
+        },
+        {
+          "block": "I",
+          "family": "paqr",
+          "count": 48,
+          "max_abs_direct": 0.10030846927906051,
+          "rms_direct": 0.02032133067653995,
+          "max_error": 1.0343968737114295e-11,
+          "rms_error": 2.674908305743955e-12,
+          "representative_full_indices": [
+            17,
+            70,
+            17,
+            17
+          ],
+          "direct_value": -0.10030846927906051,
+          "reconstructed_value": -0.1003084692793723
+        },
+        {
+          "block": "K6",
+          "family": "paqb",
+          "count": 36,
+          "max_abs_direct": 0.01544701639785763,
+          "rms_direct": 0.0035858532864906792,
+          "max_error": 2.621838703174145e-10,
+          "rms_error": 5.8024292640064525e-11,
+          "representative_full_indices": [
+            34,
+            60,
+            34,
+            60
+          ],
+          "direct_value": 0.01544701639785763,
+          "reconstructed_value": 0.015447016322279558
+        },
+        {
+          "block": "K6",
+          "family": "pqab",
+          "count": 36,
+          "max_abs_direct": 0.22039041555968503,
+          "rms_direct": 0.07789433274404624,
+          "max_error": 1.1586634429683329e-10,
+          "rms_error": 3.0076715067975814e-11,
+          "representative_full_indices": [
+            34,
+            34,
+            70,
+            70
+          ],
+          "direct_value": 0.22039041555968503,
+          "reconstructed_value": 0.22039041553706296
+        },
+        {
+          "block": "K6",
+          "family": "paqr",
+          "count": 6,
+          "max_abs_direct": 0.0072308325901307546,
+          "rms_direct": 0.003134922151232044,
+          "max_error": 1.883185100914897e-11,
+          "rms_error": 9.379258340756794e-12,
+          "representative_full_indices": [
+            34,
+            60,
+            34,
+            34
+          ],
+          "direct_value": -0.0072308325901307546,
+          "reconstructed_value": -0.0072308325712989036
+        },
+        {
+          "block": "A14",
+          "family": "paqb",
+          "count": 144,
+          "max_abs_direct": 0.030552703869312876,
+          "rms_direct": 0.0032184986934331596,
+          "max_error": 2.5767366105405864e-10,
+          "rms_error": 3.5211511819911395e-11,
+          "representative_full_indices": [
+            45,
+            58,
+            45,
+            58
+          ],
+          "direct_value": 0.030552703869312876,
+          "reconstructed_value": 0.030552703820984652
+        },
+        {
+          "block": "A14",
+          "family": "pqab",
+          "count": 144,
+          "max_abs_direct": 0.3133035501875176,
+          "rms_direct": 0.07031090463936966,
+          "max_error": 3.920525015743692e-11,
+          "rms_error": 8.318358600758382e-12,
+          "representative_full_indices": [
+            45,
+            45,
+            70,
+            70
+          ],
+          "direct_value": 0.3133035501875176,
+          "reconstructed_value": 0.31330355022672285
+        },
+        {
+          "block": "A14",
+          "family": "paqr",
+          "count": 48,
+          "max_abs_direct": 0.07779436237363754,
+          "rms_direct": 0.014779318974517145,
+          "max_error": 4.7627326887032806e-12,
+          "rms_error": 1.8211418540943283e-12,
+          "representative_full_indices": [
+            45,
+            58,
+            45,
+            45
+          ],
+          "direct_value": -0.07779436237363754,
+          "reconstructed_value": -0.07779436237035295
+        }
+      ],
+      "pool_full_indices": [
+        17,
+        9,
+        70,
+        245,
+        34,
+        60,
+        281,
+        45,
+        49,
+        58,
+        159
+      ],
+      "seed": 20261005,
+      "sampling_rule": "largest physical h1 entry and one random occupied/active column per block; associated plus random V columns; all listed families within this bounded pool",
+      "arrays_reloaded_from_disk": true,
+      "nonzero_threshold": 1e-10,
+      "passed": true,
+      "caveat": "sampled errors are not global bounds; failed zero blocks require physical diagnosis, not fabricated couplings"
+    },
+    "parent_compatible_determinant": {
+      "projection": {
+        "alpha": {
+          "F_occupation": 43.999995832587686,
+          "F_holes": 4.167412313904606e-06,
+          "retained_singular_values": [
+            1.0000000000000593,
+            1.0000000000000298,
+            1.0000000000000244,
+            1.000000000000022,
+            1.0000000000000215,
+            1.0000000000000164,
+            1.0000000000000147,
+            1.0000000000000124,
+            1.0000000000000115,
+            1.00000000000001,
+            1.0000000000000089,
+            1.0000000000000087,
+            1.000000000000008,
+            1.000000000000007,
+            1.000000000000004,
+            1.000000000000003,
+            1.0000000000000029,
+            1.0000000000000016,
+            1.0000000000000009,
+            1.0000000000000009,
+            1.0000000000000007,
+            1.0000000000000007,
+            1.0000000000000004,
+            1.0000000000000004,
+            1.0000000000000004,
+            1.0000000000000002,
+            1.0,
+            0.9999999999999999,
+            0.9999999999999999,
+            0.9999999999999998,
+            0.9999999999999994,
+            0.9999999999999993,
+            0.9999999999999992,
+            0.9999999999999989,
+            0.9999999999999987,
+            0.9999999999999978,
+            0.9999999999999973,
+            0.9999999999999972,
+            0.9999999999999967,
+            0.9999999999999959,
+            0.9999999999999931,
+            0.9999999999999918,
+            0.9999999999999895,
+            0.9999999999999879,
+            0.9999999999999856,
+            0.9999999999999836,
+            0.9999999999999817,
+            0.9999999999999812,
+            0.9999999999999799,
+            0.9999999999999782,
+            0.9999999999999756,
+            0.9999999999999744,
+            0.9999999999999668,
+            0.9999999999999245,
+            0.0006959417014285467,
+            0.0006940822697236392,
+            0.0006875673807615877,
+            0.0006841704607221088,
+            0.0006833336398937525,
+            0.0006824016765433271,
+            0.0005702497241885625,
+            0.0005685853157883783,
+            0.0003210533481756136,
+            0.00028264305229521526,
+            0.0002605958739825597,
+            0.0002492587076704642,
+            0.0002482454575206237,
+            0.00023978387832661126,
+            0.0002191705036443592,
+            0.0001806173301892792,
+            0.0001738449082417437,
+            0.0001463717184386346,
+            0.00013821702082844712,
+            0.0001338117493942734,
+            0.00011791730635738228,
+            0.00011682561140682683,
+            0.00011039819527348153,
+            9.39605423602744e-05,
+            7.972815305798624e-05,
+            6.411517032477168e-05,
+            6.002970452810789e-05,
+            5.903683936841569e-05,
+            5.3256589502521253e-05,
+            5.250342547529941e-05,
+            5.2434652697919414e-05,
+            5.2002848672157995e-05,
+            1.2827784942825756e-05,
+            1.0942536492423072e-05,
+            1.0752964967878957e-05,
+            1.0355138082847772e-05,
+            1.0301276616219996e-05,
+            9.90423460713181e-06,
+            4.36222652072368e-06,
+            4.33970723474229e-06,
+            4.312896996807373e-06,
+            4.276248792492358e-06,
+            7.258280458654382e-07,
+            7.246093099818562e-07
+          ],
+          "retained_occupied_count": 54
+        },
+        "beta": {
+          "F_occupation": 43.999995832587686,
+          "F_holes": 4.167412313904606e-06,
+          "retained_singular_values": [
+            1.0000000000000477,
+            1.0000000000000238,
+            1.0000000000000207,
+            1.0000000000000158,
+            1.0000000000000138,
+            1.0000000000000127,
+            1.0000000000000104,
+            1.0000000000000087,
+            1.0000000000000073,
+            1.0000000000000067,
+            1.0000000000000038,
+            1.0000000000000027,
+            1.0000000000000024,
+            1.000000000000002,
+            1.0000000000000013,
+            1.0000000000000013,
+            1.000000000000001,
+            1.0000000000000009,
+            1.0000000000000004,
+            1.0000000000000002,
+            1.0000000000000002,
+            1.0,
+            1.0,
+            0.9999999999999994,
+            0.999999999999999,
+            0.9999999999999989,
+            0.9999999999999984,
+            0.9999999999999981,
+            0.9999999999999979,
+            0.9999999999999977,
+            0.9999999999999971,
+            0.9999999999999968,
+            0.9999999999999949,
+            0.9999999999999922,
+            0.9999999999999907,
+            0.9999999999999875,
+            0.9999999999999848,
+            0.9999999999999829,
+            0.9999999999999809,
+            0.9999999999999791,
+            0.9999999999999776,
+            0.9999999999999757,
+            0.9999999999999712,
+            0.9999999999999388,
+            0.0006959417014231195,
+            0.0006940822697217101,
+            0.000687567380762292,
+            0.0006841704607208564,
+            0.0006833336398943562,
+            0.0006824016765426042,
+            0.0005702497241884814,
+            0.0005685853157854338,
+            0.00032105334817650614,
+            0.00028264305229704285,
+            0.0002605958739820715,
+            0.00024925870767069367,
+            0.0002482454575212919,
+            0.0002397838783273703,
+            0.00021917050364418032,
+            0.00018061733018783394,
+            0.00017384490824241548,
+            0.0001463717184399755,
+            0.00013821702082750275,
+            0.0001338117493941432,
+            0.00011791730635761205,
+            0.000116825611407726,
+            0.00011039819527308513,
+            9.396054235940252e-05,
+            7.972815305803533e-05,
+            6.41151703262527e-05,
+            6.002970453117186e-05,
+            5.90368393678879e-05,
+            5.325658950609823e-05,
+            5.250342547685622e-05,
+            5.243465270202654e-05,
+            5.2002848674133235e-05,
+            1.2827784945914392e-05,
+            1.0942536496005266e-05,
+            1.075296497412245e-05,
+            1.0355138081892534e-05,
+            1.0301276619649086e-05,
+            9.904234609830338e-06,
+            4.3622265172307935e-06,
+            4.339707230182651e-06,
+            4.312896998080649e-06,
+            4.276248791361761e-06,
+            7.258280460376032e-07,
+            7.246093118169741e-07
+          ],
+          "retained_occupied_count": 44
+        }
+      },
+      "construction": "F doubly occupied; retain dominant Nspin-nF left singular vectors of projected parent occupied coefficients",
+      "compatible_AO_energy": -5092.727955834941,
+      "compatible_MO_energy": -5092.727955820912,
+      "unprojected_parent_physical_energy": -5092.728387304428,
+      "compatible_minus_unprojected_parent": 0.0004314694870117819,
+      "AO_MO_error": 1.4028955774847418e-08,
+      "passed": true,
+      "note": "High-spin integral validation only; neither the DFT total energy nor a singlet trial"
+    },
+    "virtual_mixed_determinants": {
+      "tests": [
+        {
+          "test": 0,
+          "ao_direct": -5089.356760636356,
+          "mo_tight": -5089.356760622319,
+          "mo_loose": -5089.356760492275,
+          "tight_error": 1.4037141227163374e-08,
+          "loose_to_tight": 1.3004409993300214e-07,
+          "passed": true
+        },
+        {
+          "test": 1,
+          "ao_direct": -5089.892006159685,
+          "mo_tight": -5089.892006145459,
+          "mo_loose": -5089.892006014079,
+          "tight_error": 1.422540663043037e-08,
+          "loose_to_tight": 1.3138014764990658e-07,
+          "passed": true
+        },
+        {
+          "test": 2,
+          "ao_direct": -5076.156706074065,
+          "mo_tight": -5076.156706055121,
+          "mo_loose": -5076.156705898501,
+          "tight_error": 1.8944774637930095e-08,
+          "loose_to_tight": 1.566195351188071e-07,
+          "passed": true
+        }
+      ],
+      "passed": true
+    }
+  },
+  "failed_checks": [],
+  "fixed_integral_checks_reused_from": "validation/initial_production_50707994/validation_metrics.json",
+  "baseline_report_sha256": "d2f70df0db38a82a38f8785b2d000ec6dd60b329ba9544f7d65e42a073420205",
+  "validated_inputs_manifest_sha256": "e297808239bed9184f30301482e2da94f57522c29aff41b169fd9db7d412db34",
+  "reused_inputs_verified_by_fresh_SHA256": true,
+  "state_provenance": {
+    "cas20": {
+      "generating_job": "50789904",
+      "energy_total": -5092.872362559896,
+      "hashes": {
+        "energies.json": "bc2c75d82797da16eab4a01b96af58dce211d0f02ab1ff5b05b85dfb8dda90f7",
+        "convergence.json": "bbab010f2f79fda8e889fcbc46b5cdffff78fe098cfe570d8490e92d4cd18252",
+        "rdm1.npy": "c24b5296ad921a03dfffaacb62980c3048591fdc84e9d27c8a9519cd9f67afcb",
+        "rdm2.npy": "af26bf066c34a6b2032dda4c97f2dcf0cc79289dff5bff60c18822133b9a7ea5"
+      }
+    },
+    "cas14": {
+      "generating_job": "50707994",
+      "energy_total": -5092.838193351019,
+      "hashes": {
+        "energies.json": "dfb8610080aaa02ca5b9c19a93ec1051f4ca2259dea1e811c9ec333573dd2014",
+        "convergence.json": "2499c05d961cf75616621c93985690d260d16e6b58f6606f2b75d35088b1de34",
+        "rdm1.npy": "5f3392976e57bf6c9ba5e5a844d4e44fb61c47374c4d17aba0fed1d908635b5d",
+        "rdm2.npy": "8d8c07b03aaec500bd0b096edcb37ad586f2fff7fe5e131923d1091799ae3266"
+      }
+    }
+  },
+  "state_validation_job": "50789929"
+}

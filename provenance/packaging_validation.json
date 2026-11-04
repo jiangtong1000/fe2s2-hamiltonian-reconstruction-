@@ -1,0 +1,23 @@
+{
+  "packaging_date": "2026-10-06",
+  "scope": "Repository packaging only; no molecular SCF, DMRG, FCI or factorization rerun",
+  "unit_tests": {
+    "count": 6,
+    "passed": 6,
+    "command": "python -m unittest discover -s tests -v"
+  },
+  "checks": [
+    "12 numbered step folders with README, runner, scripts/shared-script links and compact evidence",
+    "All configured actions dry-run successfully from a different cwd with a work path containing spaces",
+    "Offline input installation validates checksums and preserves historical scalar/core conventions",
+    "Refuses nonempty unmarked work directories and initial-result overwrites",
+    "Prerequisite failure occurs before scientific imports",
+    "Semantic I/K6/A14/V partition and trial-only occupancy restrictions preserved",
+    "Python AST and JSON syntax valid; documentation local links resolve",
+    "All copied file checksums match recorded source hashes",
+    "29 compressed arrays exactly equal original arrays"
+  ],
+  "array_source_inventory": "compressed_array_sources.json",
+  "original_archive_modified": false,
+  "limits": "Portable scientific drivers have syntax/path checks and preserve original formulas. Heavy end-to-end reruns have not been executed; recorded scientific validation belongs to the original calculation."
+}
